@@ -338,6 +338,126 @@ const INLINE_GEOJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
+          126.749333787568,
+          37.3460707631122
+        ]
+      },
+      "properties": {
+        "name": "좋은의원",
+        "category": "의원",
+        "address": "경기도 시흥시 정왕시장길 62, 4층 (정왕동)",
+        "phone": "031-499-4599",
+        "date": "2026-05-19",
+        "sido": "경기도",
+        "sigungu": "시흥시",
+        "color": "#3498db"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.051371175458,
+          37.7378731929594
+        ]
+      },
+      "properties": {
+        "name": "올데이플러스의원",
+        "category": "의원",
+        "address": "경기도 의정부시 시민로 145, 2층 201~207호, 211~212호 (의정부동, 이안 더 센트로 의정부)",
+        "phone": "031-821-9110",
+        "date": "2026-05-19",
+        "sido": "경기도",
+        "sigungu": "의정부시",
+        "color": "#3498db"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.985169517081,
+          37.5726755448903
+        ]
+      },
+      "properties": {
+        "name": "본정한의원 종로",
+        "category": "한의원",
+        "address": "서울특별시 종로구 인사동5길 20, 오원빌딩 402호 (관훈동)",
+        "phone": "02-6952-6213",
+        "date": "2026-05-19",
+        "sido": "서울특별시",
+        "sigungu": "종로구",
+        "color": "#95a5a6"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.954369685876,
+          37.5479383583415
+        ]
+      },
+      "properties": {
+        "name": "연세윤슬정신건강의학과의원",
+        "category": "의원",
+        "address": "서울특별시 마포구 마포대로 156, 공덕푸르지오시티 2층 205일부호, 206일부호, 207호 (공덕동)",
+        "phone": "02-717-7700",
+        "date": "2026-05-19",
+        "sido": "서울특별시",
+        "sigungu": "마포구",
+        "color": "#3498db"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.025700266315,
+          37.5051960660157
+        ]
+      },
+      "properties": {
+        "name": "스테디성형외과의원",
+        "category": "의원",
+        "address": "서울특별시 강남구 봉은사로 111, (대장상9층)표기8층 (논현동)",
+        "phone": "02-547-7880",
+        "date": "2026-05-19",
+        "sido": "서울특별시",
+        "sigungu": "강남구",
+        "color": "#3498db"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.033158634924,
+          37.563048284529
+        ]
+      },
+      "properties": {
+        "name": "턱하면구강내과치과의원",
+        "category": "치과의원",
+        "address": "서울특별시 성동구 왕십리로 332, 성동 트레비스타 오피스텔 201, 202, 203호 (도선동)",
+        "phone": "02-6105-7575",
+        "date": "2026-05-18",
+        "sido": "서울특별시",
+        "sigungu": "성동구",
+        "color": "#95a5a6"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           126.829473076046,
           37.5589625253663
         ]
@@ -612,33 +732,13 @@ const INLINE_GEOJSON = {
         "sigungu": "강남구",
         "color": "#3498db"
       }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          126.924990343437,
-          37.4912113425285
-        ]
-      },
-      "properties": {
-        "name": "명인치과의원",
-        "category": "치과의원",
-        "address": "서울특별시 동작구 보라매로3길 29, 제2층 제1호,제2호 (신대방동, 해태보라매타워)",
-        "phone": "02-841-6661",
-        "date": "2026-05-13",
-        "sido": "서울특별시",
-        "sigungu": "동작구",
-        "color": "#95a5a6"
-      }
     }
   ]
 };
 const INLINE_KML = `<?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://www.opengis.net/kml/2.2">
   <Document>
-    <name>서울/경기 신규 허가 의료기관 (2026-05-20)</name>
+    <name>서울/경기 신규 허가 의료기관 (2026-05-21)</name>
     <description>의료기관 신규 허가 정보 (행정안전부 공공데이터)</description>
     <Style id="병원">
       <IconStyle>
@@ -658,6 +758,54 @@ const INLINE_KML = `<?xml version="1.0" encoding="UTF-8"?>
         <Icon><href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href></Icon>
       </IconStyle>
     </Style>
+    <Placemark>
+      <name>좋은의원</name>
+      <description>[의원] 허가일: 2026-05-19 | 주소: 경기도 시흥시 정왕시장길 62, 4층 (정왕동) | 전화: 031-499-4599</description>
+      <styleUrl>#의원</styleUrl>
+      <Point>
+        <coordinates>126.749333787568,37.3460707631122,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>올데이플러스의원</name>
+      <description>[의원] 허가일: 2026-05-19 | 주소: 경기도 의정부시 시민로 145, 2층 201~207호, 211~212호 (의정부동, 이안 더 센트로 의정부) | 전화: 031-821-9110</description>
+      <styleUrl>#의원</styleUrl>
+      <Point>
+        <coordinates>127.051371175458,37.7378731929594,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>본정한의원 종로</name>
+      <description>[한의원] 허가일: 2026-05-19 | 주소: 서울특별시 종로구 인사동5길 20, 오원빌딩 402호 (관훈동) | 전화: 02-6952-6213</description>
+      <styleUrl>#의원</styleUrl>
+      <Point>
+        <coordinates>126.985169517081,37.5726755448903,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>연세윤슬정신건강의학과의원</name>
+      <description>[의원] 허가일: 2026-05-19 | 주소: 서울특별시 마포구 마포대로 156, 공덕푸르지오시티 2층 205일부호, 206일부호, 207호 (공덕동) | 전화: 02-717-7700</description>
+      <styleUrl>#의원</styleUrl>
+      <Point>
+        <coordinates>126.954369685876,37.5479383583415,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>스테디성형외과의원</name>
+      <description>[의원] 허가일: 2026-05-19 | 주소: 서울특별시 강남구 봉은사로 111, (대장상9층)표기8층 (논현동) | 전화: 02-547-7880</description>
+      <styleUrl>#의원</styleUrl>
+      <Point>
+        <coordinates>127.025700266315,37.5051960660157,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>턱하면구강내과치과의원</name>
+      <description>[치과의원] 허가일: 2026-05-18 | 주소: 서울특별시 성동구 왕십리로 332, 성동 트레비스타 오피스텔 201, 202, 203호 (도선동) | 전화: 02-6105-7575</description>
+      <styleUrl>#의원</styleUrl>
+      <Point>
+        <coordinates>127.033158634924,37.563048284529,0</coordinates>
+      </Point>
+    </Placemark>
     <Placemark>
       <name>강서성모맑은내과의원</name>
       <description>[의원] 허가일: 2026-05-18 | 주소: 서울특별시 강서구 공항대로 200, 마곡지웰타워 301~304호 (마곡동) | 전화: 02-2666-0666</description>
@@ -768,14 +916,6 @@ const INLINE_KML = `<?xml version="1.0" encoding="UTF-8"?>
       <styleUrl>#의원</styleUrl>
       <Point>
         <coordinates>127.027758806248,37.5239684663137,0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <name>명인치과의원</name>
-      <description>[치과의원] 허가일: 2026-05-13 | 주소: 서울특별시 동작구 보라매로3길 29, 제2층 제1호,제2호 (신대방동, 해태보라매타워) | 전화: 02-841-6661</description>
-      <styleUrl>#의원</styleUrl>
-      <Point>
-        <coordinates>126.924990343437,37.4912113425285,0</coordinates>
       </Point>
     </Placemark>
   </Document>
