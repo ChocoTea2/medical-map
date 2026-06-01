@@ -338,6 +338,26 @@ const INLINE_GEOJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
+          126.941297259695,
+          37.2738569225436
+        ]
+      },
+      "properties": {
+        "name": "스마트약국",
+        "category": "약국",
+        "address": "경기도 수원시 권선구 금곡로 100, 107호 (금곡동)",
+        "phone": "031-294-0119",
+        "date": "2026-06-01",
+        "sido": "경기도",
+        "sigungu": "수원시",
+        "color": "#2ecc71"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           126.804607450071,
           37.5200540074434
         ]
@@ -778,7 +798,7 @@ const INLINE_GEOJSON = {
 const INLINE_KML = `<?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://www.opengis.net/kml/2.2">
   <Document>
-    <name>서울/경기 신규 허가 의료기관 (2026-05-31)</name>
+    <name>서울/경기 신규 허가 의료기관 (2026-06-01)</name>
     <description>의료기관 신규 허가 정보 (행정안전부 공공데이터)</description>
     <Style id="병원">
       <IconStyle>
@@ -798,6 +818,14 @@ const INLINE_KML = `<?xml version="1.0" encoding="UTF-8"?>
         <Icon><href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href></Icon>
       </IconStyle>
     </Style>
+    <Placemark>
+      <name>스마트약국</name>
+      <description>[약국] 허가일: 2026-06-01 | 주소: 경기도 수원시 권선구 금곡로 100, 107호 (금곡동) | 전화: 031-294-0119</description>
+      <styleUrl>#약국</styleUrl>
+      <Point>
+        <coordinates>126.941297259695,37.2738569225436,0</coordinates>
+      </Point>
+    </Placemark>
     <Placemark>
       <name>하나365약국</name>
       <description>[약국] 허가일: 2026-05-29 | 주소: 경기도 부천시 오정구 삼작로 385, 1층 일부호 (원종동) | 전화: 032-000-0000</description>
