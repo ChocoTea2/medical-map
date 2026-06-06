@@ -338,6 +338,26 @@ const INLINE_GEOJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
+          126.978956614349,
+          37.5604352919962
+        ]
+      },
+      "properties": {
+        "name": "메디원약국",
+        "category": "약국",
+        "address": "서울특별시 중구 남대문시장8길 7, 지하1층 78,79,81,82호 (남창동)",
+        "phone": "",
+        "date": "2026-06-04",
+        "sido": "서울특별시",
+        "sigungu": "중구",
+        "color": "#2ecc71"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           127.062682937358,
           37.5984702182265
         ]
@@ -432,93 +452,13 @@ const INLINE_GEOJSON = {
         "sigungu": "수원시",
         "color": "#2ecc71"
       }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          126.926498328277,
-          37.5577458058734
-        ]
-      },
-      "properties": {
-        "name": "샤인업약국",
-        "category": "약국",
-        "address": "서울특별시 마포구 양화로 188, 애경타워 1층 (동교동)",
-        "phone": "02-000-0000",
-        "date": "2026-05-29",
-        "sido": "서울특별시",
-        "sigungu": "마포구",
-        "color": "#2ecc71"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          126.889708289244,
-          37.4902732056202
-        ]
-      },
-      "properties": {
-        "name": "화인약국",
-        "category": "약국",
-        "address": "서울특별시 구로구 구로동로26길 101, 1층 (구로동)",
-        "phone": "02-6014-6126",
-        "date": "2026-05-29",
-        "sido": "서울특별시",
-        "sigungu": "구로구",
-        "color": "#2ecc71"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          127.036253837544,
-          37.4991051125474
-        ]
-      },
-      "properties": {
-        "name": "안녕역삼약국",
-        "category": "약국",
-        "address": "서울특별시 강남구 논현로85길 13, 역삼동빌딩 102호 (역삼동)",
-        "phone": "",
-        "date": "2026-05-29",
-        "sido": "서울특별시",
-        "sigungu": "강남구",
-        "color": "#2ecc71"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          126.804607450071,
-          37.5200540074434
-        ]
-      },
-      "properties": {
-        "name": "하나365약국",
-        "category": "약국",
-        "address": "경기도 부천시 오정구 삼작로 385, 1층 일부호 (원종동)",
-        "phone": "032-671-0816",
-        "date": "2026-05-29",
-        "sido": "경기도",
-        "sigungu": "부천시",
-        "color": "#2ecc71"
-      }
     }
   ]
 };
 const INLINE_KML = `<?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://www.opengis.net/kml/2.2">
   <Document>
-    <name>서울/경기 신규 허가 의료기관 (2026-06-05)</name>
+    <name>서울/경기 신규 허가 의료기관 (2026-06-06)</name>
     <description>의료기관 신규 허가 정보 (행정안전부 공공데이터)</description>
     <Style id="병원">
       <IconStyle>
@@ -538,6 +478,14 @@ const INLINE_KML = `<?xml version="1.0" encoding="UTF-8"?>
         <Icon><href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href></Icon>
       </IconStyle>
     </Style>
+    <Placemark>
+      <name>메디원약국</name>
+      <description>[약국] 허가일: 2026-06-04 | 주소: 서울특별시 중구 남대문시장8길 7, 지하1층 78,79,81,82호 (남창동) | 전화: </description>
+      <styleUrl>#약국</styleUrl>
+      <Point>
+        <coordinates>126.978956614349,37.5604352919962,0</coordinates>
+      </Point>
+    </Placemark>
     <Placemark>
       <name>서울아산빛정신건강의학과의원</name>
       <description>[의원] 허가일: 2026-06-02 | 주소: 서울특별시 동대문구 이문로 120, 아이파크자이상가 3층 A306호 (이문동) | 전화: 02-968-7775</description>
@@ -576,38 +524,6 @@ const INLINE_KML = `<?xml version="1.0" encoding="UTF-8"?>
       <styleUrl>#약국</styleUrl>
       <Point>
         <coordinates>126.941297259695,37.2738569225436,0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <name>샤인업약국</name>
-      <description>[약국] 허가일: 2026-05-29 | 주소: 서울특별시 마포구 양화로 188, 애경타워 1층 (동교동) | 전화: 02-000-0000</description>
-      <styleUrl>#약국</styleUrl>
-      <Point>
-        <coordinates>126.926498328277,37.5577458058734,0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <name>화인약국</name>
-      <description>[약국] 허가일: 2026-05-29 | 주소: 서울특별시 구로구 구로동로26길 101, 1층 (구로동) | 전화: 02-6014-6126</description>
-      <styleUrl>#약국</styleUrl>
-      <Point>
-        <coordinates>126.889708289244,37.4902732056202,0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <name>안녕역삼약국</name>
-      <description>[약국] 허가일: 2026-05-29 | 주소: 서울특별시 강남구 논현로85길 13, 역삼동빌딩 102호 (역삼동) | 전화: </description>
-      <styleUrl>#약국</styleUrl>
-      <Point>
-        <coordinates>127.036253837544,37.4991051125474,0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <name>하나365약국</name>
-      <description>[약국] 허가일: 2026-05-29 | 주소: 경기도 부천시 오정구 삼작로 385, 1층 일부호 (원종동) | 전화: 032-671-0816</description>
-      <styleUrl>#약국</styleUrl>
-      <Point>
-        <coordinates>126.804607450071,37.5200540074434,0</coordinates>
       </Point>
     </Placemark>
   </Document>
