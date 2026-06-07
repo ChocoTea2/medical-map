@@ -338,6 +338,86 @@ const INLINE_GEOJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
+          126.81920602303,
+          37.5622669688172
+        ]
+      },
+      "properties": {
+        "name": "디디치과의원",
+        "category": "치과의원",
+        "address": "서울특별시 강서구 공항대로 103, 판매시설2동 212호 (마곡동, 마곡 엠밸리 9단지)",
+        "phone": "02-2662-2828",
+        "date": "2026-06-05",
+        "sido": "서울특별시",
+        "sigungu": "강서구",
+        "color": "#95a5a6"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.110801530964,
+          37.3503955629695
+        ]
+      },
+      "properties": {
+        "name": "미금삼성탑신경외과의원",
+        "category": "의원",
+        "address": "경기도 성남시 분당구 돌마로 79, 썬프라자 401,402호 (금곡동)",
+        "phone": "031-717-1179",
+        "date": "2026-06-05",
+        "sido": "경기도",
+        "sigungu": "성남시",
+        "color": "#3498db"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.053849955483,
+          37.8417501721146
+        ]
+      },
+      "properties": {
+        "name": "팜프라자약국",
+        "category": "약국",
+        "address": "경기도 양주시 평화로 1713, 이마트 2층 2207호 (회정동)",
+        "phone": "",
+        "date": "2026-06-05",
+        "sido": "경기도",
+        "sigungu": "양주시",
+        "color": "#2ecc71"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.914484232433,
+          37.5549072326764
+        ]
+      },
+      "properties": {
+        "name": "맑은약국",
+        "category": "약국",
+        "address": "서울특별시 마포구 동교로 111, 1층 (서교동)",
+        "phone": "02-336-1757",
+        "date": "2026-06-05",
+        "sido": "서울특별시",
+        "sigungu": "마포구",
+        "color": "#2ecc71"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           126.978956614349,
           37.5604352919962
         ]
@@ -458,7 +538,7 @@ const INLINE_GEOJSON = {
 const INLINE_KML = `<?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://www.opengis.net/kml/2.2">
   <Document>
-    <name>서울/경기 신규 허가 의료기관 (2026-06-06)</name>
+    <name>서울/경기 신규 허가 의료기관 (2026-06-07)</name>
     <description>의료기관 신규 허가 정보 (행정안전부 공공데이터)</description>
     <Style id="병원">
       <IconStyle>
@@ -478,6 +558,38 @@ const INLINE_KML = `<?xml version="1.0" encoding="UTF-8"?>
         <Icon><href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href></Icon>
       </IconStyle>
     </Style>
+    <Placemark>
+      <name>디디치과의원</name>
+      <description>[치과의원] 허가일: 2026-06-05 | 주소: 서울특별시 강서구 공항대로 103, 판매시설2동 212호 (마곡동, 마곡 엠밸리 9단지) | 전화: 02-2662-2828</description>
+      <styleUrl>#의원</styleUrl>
+      <Point>
+        <coordinates>126.81920602303,37.5622669688172,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>미금삼성탑신경외과의원</name>
+      <description>[의원] 허가일: 2026-06-05 | 주소: 경기도 성남시 분당구 돌마로 79, 썬프라자 401,402호 (금곡동) | 전화: 031-717-1179</description>
+      <styleUrl>#의원</styleUrl>
+      <Point>
+        <coordinates>127.110801530964,37.3503955629695,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>팜프라자약국</name>
+      <description>[약국] 허가일: 2026-06-05 | 주소: 경기도 양주시 평화로 1713, 이마트 2층 2207호 (회정동) | 전화: </description>
+      <styleUrl>#약국</styleUrl>
+      <Point>
+        <coordinates>127.053849955483,37.8417501721146,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>맑은약국</name>
+      <description>[약국] 허가일: 2026-06-05 | 주소: 서울특별시 마포구 동교로 111, 1층 (서교동) | 전화: 02-336-1757</description>
+      <styleUrl>#약국</styleUrl>
+      <Point>
+        <coordinates>126.914484232433,37.5549072326764,0</coordinates>
+      </Point>
+    </Placemark>
     <Placemark>
       <name>메디원약국</name>
       <description>[약국] 허가일: 2026-06-04 | 주소: 서울특별시 중구 남대문시장8길 7, 지하1층 78,79,81,82호 (남창동) | 전화: </description>
