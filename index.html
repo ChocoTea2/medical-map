@@ -338,6 +338,86 @@ const INLINE_GEOJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
+          127.01614059022,
+          37.2750172210672
+        ]
+      },
+      "properties": {
+        "name": "에이블병원",
+        "category": "병원",
+        "address": "경기도 수원시 팔달구 향교로 161, 에이블타워 (중동)",
+        "phone": "031-1661-0775",
+        "date": "2026-06-19",
+        "sido": "경기도",
+        "sigungu": "수원시",
+        "color": "#e74c3c"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.086224807954,
+          37.5106960472158
+        ]
+      },
+      "properties": {
+        "name": "안도의원",
+        "category": "의원",
+        "address": "서울특별시 송파구 석촌호수로 61, 트리지움 401호 (잠실동)",
+        "phone": "02-421-0416",
+        "date": "2026-06-19",
+        "sido": "서울특별시",
+        "sigungu": "송파구",
+        "color": "#3498db"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.043851849234,
+          37.6690623787094
+        ]
+      },
+      "properties": {
+        "name": "사암도봉한의원",
+        "category": "한의원",
+        "address": "서울특별시 도봉구 도봉로 726, 2층 (방학동)",
+        "phone": "02-954-2012",
+        "date": "2026-06-19",
+        "sido": "서울특별시",
+        "sigungu": "도봉구",
+        "color": "#95a5a6"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.982199707405,
+          37.4875538278198
+        ]
+      },
+      "properties": {
+        "name": "진약국",
+        "category": "약국",
+        "address": "서울특별시 동작구 동작대로 지하117, 총신대입구(이수)역4호선 432-222호 (사당동)",
+        "phone": "",
+        "date": "2026-06-19",
+        "sido": "서울특별시",
+        "sigungu": "동작구",
+        "color": "#2ecc71"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           126.729344836717,
           37.7208816019703
         ]
@@ -407,6 +487,26 @@ const INLINE_GEOJSON = {
         "category": "의원",
         "address": "서울특별시 송파구 올림픽로 102, 서일빌딩 10층 (잠실동)",
         "phone": "02-421-7588",
+        "date": "2026-06-17",
+        "sido": "서울특별시",
+        "sigungu": "송파구",
+        "color": "#3498db"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.142191034933,
+          37.4817394651186
+        ]
+      },
+      "properties": {
+        "name": "엄시내소아청소년과의원",
+        "category": "의원",
+        "address": "서울특별시 송파구 위례광장로 193, 대길프라자 3층 3-4호 (장지동)",
+        "phone": "02-6952-9154",
         "date": "2026-06-17",
         "sido": "서울특별시",
         "sigungu": "송파구",
@@ -718,7 +818,7 @@ const INLINE_GEOJSON = {
 const INLINE_KML = `<?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://www.opengis.net/kml/2.2">
   <Document>
-    <name>서울/경기 신규 허가 의료기관 (2026-06-20)</name>
+    <name>서울/경기 신규 허가 의료기관 (2026-06-21)</name>
     <description>의료기관 신규 허가 정보 (행정안전부 공공데이터)</description>
     <Style id="병원">
       <IconStyle>
@@ -738,6 +838,38 @@ const INLINE_KML = `<?xml version="1.0" encoding="UTF-8"?>
         <Icon><href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href></Icon>
       </IconStyle>
     </Style>
+    <Placemark>
+      <name>에이블병원</name>
+      <description>[병원] 허가일: 2026-06-19 | 주소: 경기도 수원시 팔달구 향교로 161, 에이블타워 (중동) | 전화: 031-1661-0775</description>
+      <styleUrl>#병원</styleUrl>
+      <Point>
+        <coordinates>127.01614059022,37.2750172210672,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>안도의원</name>
+      <description>[의원] 허가일: 2026-06-19 | 주소: 서울특별시 송파구 석촌호수로 61, 트리지움 401호 (잠실동) | 전화: 02-421-0416</description>
+      <styleUrl>#의원</styleUrl>
+      <Point>
+        <coordinates>127.086224807954,37.5106960472158,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>사암도봉한의원</name>
+      <description>[한의원] 허가일: 2026-06-19 | 주소: 서울특별시 도봉구 도봉로 726, 2층 (방학동) | 전화: 02-954-2012</description>
+      <styleUrl>#의원</styleUrl>
+      <Point>
+        <coordinates>127.043851849234,37.6690623787094,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>진약국</name>
+      <description>[약국] 허가일: 2026-06-19 | 주소: 서울특별시 동작구 동작대로 지하117, 총신대입구(이수)역4호선 432-222호 (사당동) | 전화: </description>
+      <styleUrl>#약국</styleUrl>
+      <Point>
+        <coordinates>126.982199707405,37.4875538278198,0</coordinates>
+      </Point>
+    </Placemark>
     <Placemark>
       <name>운정새로이치과의원</name>
       <description>[치과의원] 허가일: 2026-06-18 | 주소: 경기도 파주시 물향기2로 157, 203호 (동패동) | 전화: 031-8071-2275</description>
@@ -768,6 +900,14 @@ const INLINE_KML = `<?xml version="1.0" encoding="UTF-8"?>
       <styleUrl>#의원</styleUrl>
       <Point>
         <coordinates>127.081962651177,37.5114258315489,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>엄시내소아청소년과의원</name>
+      <description>[의원] 허가일: 2026-06-17 | 주소: 서울특별시 송파구 위례광장로 193, 대길프라자 3층 3-4호 (장지동) | 전화: 02-6952-9154</description>
+      <styleUrl>#의원</styleUrl>
+      <Point>
+        <coordinates>127.142191034933,37.4817394651186,0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
