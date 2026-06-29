@@ -338,6 +338,26 @@ const INLINE_GEOJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
+          127.13946428438,
+          37.6010289594963
+        ]
+      },
+      "properties": {
+        "name": "수브릿지약국",
+        "category": "약국",
+        "address": "경기도 구리시 경춘로 213, 108호 (인창동)",
+        "phone": "031-514-7500",
+        "date": "2026-06-29",
+        "sido": "경기도",
+        "sigungu": "구리시",
+        "color": "#2ecc71"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           126.896096061616,
           37.4724316378703
         ]
@@ -892,33 +912,13 @@ const INLINE_GEOJSON = {
         "sigungu": "서초구",
         "color": "#2ecc71"
       }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          126.772546706383,
-          37.6571708355044
-        ]
-      },
-      "properties": {
-        "name": "일산끗한의원",
-        "category": "한의원",
-        "address": "경기도 고양시 일산동구 정발산로 33, 낙원프라자 8층 801, 803호 (장항동)",
-        "phone": "031-908-0365",
-        "date": "2026-06-21",
-        "sido": "경기도",
-        "sigungu": "고양시",
-        "color": "#95a5a6"
-      }
     }
   ]
 };
 const INLINE_KML = `<?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://www.opengis.net/kml/2.2">
   <Document>
-    <name>서울/경기 신규 허가 의료기관 (2026-06-28)</name>
+    <name>서울/경기 신규 허가 의료기관 (2026-06-29)</name>
     <description>의료기관 신규 허가 정보 (행정안전부 공공데이터)</description>
     <Style id="병원">
       <IconStyle>
@@ -938,6 +938,14 @@ const INLINE_KML = `<?xml version="1.0" encoding="UTF-8"?>
         <Icon><href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href></Icon>
       </IconStyle>
     </Style>
+    <Placemark>
+      <name>수브릿지약국</name>
+      <description>[약국] 허가일: 2026-06-29 | 주소: 경기도 구리시 경춘로 213, 108호 (인창동) | 전화: 031-514-7500</description>
+      <styleUrl>#약국</styleUrl>
+      <Point>
+        <coordinates>127.13946428438,37.6010289594963,0</coordinates>
+      </Point>
+    </Placemark>
     <Placemark>
       <name>삼대한방병원</name>
       <description>[한방병원] 허가일: 2026-06-26 | 주소: 서울특별시 금천구 가산로 70, 서울디자인직업전문학교 A동 3,4,5층 (독산동) | 전화: 02-6673-1075</description>
@@ -1160,14 +1168,6 @@ const INLINE_KML = `<?xml version="1.0" encoding="UTF-8"?>
       <styleUrl>#약국</styleUrl>
       <Point>
         <coordinates>127.019386390307,37.5144406772564,0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <name>일산끗한의원</name>
-      <description>[한의원] 허가일: 2026-06-21 | 주소: 경기도 고양시 일산동구 정발산로 33, 낙원프라자 8층 801, 803호 (장항동) | 전화: 031-908-0365</description>
-      <styleUrl>#의원</styleUrl>
-      <Point>
-        <coordinates>126.772546706383,37.6571708355044,0</coordinates>
       </Point>
     </Placemark>
   </Document>
