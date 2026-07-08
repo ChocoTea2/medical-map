@@ -338,6 +338,26 @@ const INLINE_GEOJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
+          127.142775905947,
+          37.4713404854822
+        ]
+      },
+      "properties": {
+        "name": "새힘약국",
+        "category": "약국",
+        "address": "경기도 성남시 수정구 위례광장로 328, 우성위례타워 123,124호 (창곡동)",
+        "phone": "031-757-6474",
+        "date": "2026-07-06",
+        "sido": "경기도",
+        "sigungu": "성남시",
+        "color": "#2ecc71"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           127.051559563993,
           37.5681619527974
         ]
@@ -592,113 +612,13 @@ const INLINE_GEOJSON = {
         "sigungu": "광진구",
         "color": "#2ecc71"
       }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          126.953453547632,
-          37.391479298647
-        ]
-      },
-      "properties": {
-        "name": "로아한의원",
-        "category": "한의원",
-        "address": "경기도 안양시 동안구 시민대로 202, 에메랄드빌딩 308호 (호계동)",
-        "phone": "031-360-3030",
-        "date": "2026-06-30",
-        "sido": "경기도",
-        "sigungu": "안양시",
-        "color": "#95a5a6"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          127.024543871587,
-          37.5028594641113
-        ]
-      },
-      "properties": {
-        "name": "경희턱앤본한의원",
-        "category": "한의원",
-        "address": "서울특별시 서초구 강남대로 455, 201호 (서초동, 강남태영데시앙루브)",
-        "phone": "02-2039-1086",
-        "date": "2026-06-30",
-        "sido": "서울특별시",
-        "sigungu": "서초구",
-        "color": "#95a5a6"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          127.084716083959,
-          37.3060547136171
-        ]
-      },
-      "properties": {
-        "name": "2층 중앙약국",
-        "category": "약국",
-        "address": "경기도 용인시 수지구 만현로 120, SR프라자 214호 (상현동)",
-        "phone": "",
-        "date": "2026-06-30",
-        "sido": "경기도",
-        "sigungu": "용인시",
-        "color": "#2ecc71"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          126.975394260788,
-          37.4024760233923
-        ]
-      },
-      "properties": {
-        "name": "인덕원우리약국",
-        "category": "약국",
-        "address": "경기도 안양시 동안구 관악대로 480, 우정타운 106호 (관양동)",
-        "phone": "",
-        "date": "2026-06-30",
-        "sido": "경기도",
-        "sigungu": "안양시",
-        "color": "#2ecc71"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          127.053755437266,
-          37.6981408573755
-        ]
-      },
-      "properties": {
-        "name": "맥스라이프약국",
-        "category": "약국",
-        "address": "경기도 의정부시 동일로 101, 1층 (장암동)",
-        "phone": "031-877-1592",
-        "date": "2026-06-30",
-        "sido": "경기도",
-        "sigungu": "의정부시",
-        "color": "#2ecc71"
-      }
     }
   ]
 };
 const INLINE_KML = `<?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://www.opengis.net/kml/2.2">
   <Document>
-    <name>서울/경기 신규 허가 의료기관 (2026-07-07)</name>
+    <name>서울/경기 신규 허가 의료기관 (2026-07-08)</name>
     <description>의료기관 신규 허가 정보 (행정안전부 공공데이터)</description>
     <Style id="병원">
       <IconStyle>
@@ -718,6 +638,14 @@ const INLINE_KML = `<?xml version="1.0" encoding="UTF-8"?>
         <Icon><href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href></Icon>
       </IconStyle>
     </Style>
+    <Placemark>
+      <name>새힘약국</name>
+      <description>[약국] 허가일: 2026-07-06 | 주소: 경기도 성남시 수정구 위례광장로 328, 우성위례타워 123,124호 (창곡동) | 전화: 031-757-6474</description>
+      <styleUrl>#약국</styleUrl>
+      <Point>
+        <coordinates>127.142775905947,37.4713404854822,0</coordinates>
+      </Point>
+    </Placemark>
     <Placemark>
       <name>서울보나안과의원</name>
       <description>[의원] 허가일: 2026-07-03 | 주소: 서울특별시 동대문구 천호대로 267, DANA 4층 (답십리동) | 전화: 02-2243-1001</description>
@@ -820,46 +748,6 @@ const INLINE_KML = `<?xml version="1.0" encoding="UTF-8"?>
       <styleUrl>#약국</styleUrl>
       <Point>
         <coordinates>127.072205983006,37.5482023352677,0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <name>로아한의원</name>
-      <description>[한의원] 허가일: 2026-06-30 | 주소: 경기도 안양시 동안구 시민대로 202, 에메랄드빌딩 308호 (호계동) | 전화: 031-360-3030</description>
-      <styleUrl>#의원</styleUrl>
-      <Point>
-        <coordinates>126.953453547632,37.391479298647,0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <name>경희턱앤본한의원</name>
-      <description>[한의원] 허가일: 2026-06-30 | 주소: 서울특별시 서초구 강남대로 455, 201호 (서초동, 강남태영데시앙루브) | 전화: 02-2039-1086</description>
-      <styleUrl>#의원</styleUrl>
-      <Point>
-        <coordinates>127.024543871587,37.5028594641113,0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <name>2층 중앙약국</name>
-      <description>[약국] 허가일: 2026-06-30 | 주소: 경기도 용인시 수지구 만현로 120, SR프라자 214호 (상현동) | 전화: </description>
-      <styleUrl>#약국</styleUrl>
-      <Point>
-        <coordinates>127.084716083959,37.3060547136171,0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <name>인덕원우리약국</name>
-      <description>[약국] 허가일: 2026-06-30 | 주소: 경기도 안양시 동안구 관악대로 480, 우정타운 106호 (관양동) | 전화: </description>
-      <styleUrl>#약국</styleUrl>
-      <Point>
-        <coordinates>126.975394260788,37.4024760233923,0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <name>맥스라이프약국</name>
-      <description>[약국] 허가일: 2026-06-30 | 주소: 경기도 의정부시 동일로 101, 1층 (장암동) | 전화: 031-877-1592</description>
-      <styleUrl>#약국</styleUrl>
-      <Point>
-        <coordinates>127.053755437266,37.6981408573755,0</coordinates>
       </Point>
     </Placemark>
   </Document>
