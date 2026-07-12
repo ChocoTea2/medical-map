@@ -358,6 +358,46 @@ const INLINE_GEOJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
+          127.038233342629,
+          37.5784547601275
+        ]
+      },
+      "properties": {
+        "name": "나스정형외과의원",
+        "category": "의원",
+        "address": "서울특별시 동대문구 고산자로 435, 1,2층 (제기동)",
+        "phone": "02-6949-6637",
+        "date": "2026-07-09",
+        "sido": "서울특별시",
+        "sigungu": "동대문구",
+        "color": "#3498db"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.153487824004,
+          37.278013079108
+        ]
+      },
+      "properties": {
+        "name": "7층 은약국",
+        "category": "약국",
+        "address": "경기도 용인시 기흥구 동백중앙로 283, 골드프라자 A동 7층 703호 (중동)",
+        "phone": "031-548-1235",
+        "date": "2026-07-09",
+        "sido": "경기도",
+        "sigungu": "용인시",
+        "color": "#2ecc71"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           127.124975762766,
           37.540555377209
         ]
@@ -538,7 +578,7 @@ const INLINE_GEOJSON = {
 const INLINE_KML = `<?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://www.opengis.net/kml/2.2">
   <Document>
-    <name>서울/경기 신규 허가 의료기관 (2026-07-11)</name>
+    <name>서울/경기 신규 허가 의료기관 (2026-07-12)</name>
     <description>의료기관 신규 허가 정보 (행정안전부 공공데이터)</description>
     <Style id="병원">
       <IconStyle>
@@ -564,6 +604,22 @@ const INLINE_KML = `<?xml version="1.0" encoding="UTF-8"?>
       <styleUrl>#의원</styleUrl>
       <Point>
         <coordinates>126.795997639138,37.4816616139654,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>나스정형외과의원</name>
+      <description>[의원] 허가일: 2026-07-09 | 주소: 서울특별시 동대문구 고산자로 435, 1,2층 (제기동) | 전화: 02-6949-6637</description>
+      <styleUrl>#의원</styleUrl>
+      <Point>
+        <coordinates>127.038233342629,37.5784547601275,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>7층 은약국</name>
+      <description>[약국] 허가일: 2026-07-09 | 주소: 경기도 용인시 기흥구 동백중앙로 283, 골드프라자 A동 7층 703호 (중동) | 전화: 031-548-1235</description>
+      <styleUrl>#약국</styleUrl>
+      <Point>
+        <coordinates>127.153487824004,37.278013079108,0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
