@@ -338,6 +338,46 @@ const INLINE_GEOJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
+          127.054668203745,
+          37.4973689050395
+        ]
+      },
+      "properties": {
+        "name": "서울오세민정신건강의학과의원",
+        "category": "의원",
+        "address": "서울특별시 강남구 도곡로 405, 삼환 아르누보2 2층 6호 (대치동)",
+        "phone": "02-6032-5010",
+        "date": "2026-07-14",
+        "sido": "서울특별시",
+        "sigungu": "강남구",
+        "color": "#3498db"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.020462427035,
+          37.5161268144095
+        ]
+      },
+      "properties": {
+        "name": "모리브의원",
+        "category": "의원",
+        "address": "서울특별시 강남구 도산대로 106, BK성형외과 9,10층 (논현동)",
+        "phone": "02-6083-6318",
+        "date": "2026-07-14",
+        "sido": "서울특별시",
+        "sigungu": "강남구",
+        "color": "#3498db"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           126.889578522942,
           37.4766451549316
         ]
@@ -612,53 +652,13 @@ const INLINE_GEOJSON = {
         "sigungu": "성동구",
         "color": "#2ecc71"
       }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          127.244107182497,
-          37.65508880945
-        ]
-      },
-      "properties": {
-        "name": "서울이음안과의원",
-        "category": "의원",
-        "address": "경기도 남양주시 늘을2로 26, 메인시네마타워 605, 606-2호 (호평동)",
-        "phone": "031-511-2111",
-        "date": "2026-07-08",
-        "sido": "경기도",
-        "sigungu": "남양주시",
-        "color": "#3498db"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          126.957946204358,
-          37.5547266354932
-        ]
-      },
-      "properties": {
-        "name": "아현큰약국",
-        "category": "약국",
-        "address": "서울특별시 마포구 마포대로 236, 1층 101호 (아현동, 예미원아파트)",
-        "phone": "02-313-2723",
-        "date": "2026-07-08",
-        "sido": "서울특별시",
-        "sigungu": "마포구",
-        "color": "#2ecc71"
-      }
     }
   ]
 };
 const INLINE_KML = `<?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://www.opengis.net/kml/2.2">
   <Document>
-    <name>서울/경기 신규 허가 의료기관 (2026-07-15)</name>
+    <name>서울/경기 신규 허가 의료기관 (2026-07-16)</name>
     <description>의료기관 신규 허가 정보 (행정안전부 공공데이터)</description>
     <Style id="병원">
       <IconStyle>
@@ -678,6 +678,22 @@ const INLINE_KML = `<?xml version="1.0" encoding="UTF-8"?>
         <Icon><href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href></Icon>
       </IconStyle>
     </Style>
+    <Placemark>
+      <name>서울오세민정신건강의학과의원</name>
+      <description>[의원] 허가일: 2026-07-14 | 주소: 서울특별시 강남구 도곡로 405, 삼환 아르누보2 2층 6호 (대치동) | 전화: 02-6032-5010</description>
+      <styleUrl>#의원</styleUrl>
+      <Point>
+        <coordinates>127.054668203745,37.4973689050395,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>모리브의원</name>
+      <description>[의원] 허가일: 2026-07-14 | 주소: 서울특별시 강남구 도산대로 106, BK성형외과 9,10층 (논현동) | 전화: 02-6083-6318</description>
+      <styleUrl>#의원</styleUrl>
+      <Point>
+        <coordinates>127.020462427035,37.5161268144095,0</coordinates>
+      </Point>
+    </Placemark>
     <Placemark>
       <name>이든여성의원</name>
       <description>[의원] 허가일: 2026-07-13 | 주소: 서울특별시 금천구 디지털로10길 37, 아스크타워 K동 2층 238~241호 (가산동) | 전화: 02-6325-7000</description>
@@ -788,22 +804,6 @@ const INLINE_KML = `<?xml version="1.0" encoding="UTF-8"?>
       <styleUrl>#약국</styleUrl>
       <Point>
         <coordinates>127.05116429026,37.5438212276447,0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <name>서울이음안과의원</name>
-      <description>[의원] 허가일: 2026-07-08 | 주소: 경기도 남양주시 늘을2로 26, 메인시네마타워 605, 606-2호 (호평동) | 전화: 031-511-2111</description>
-      <styleUrl>#의원</styleUrl>
-      <Point>
-        <coordinates>127.244107182497,37.65508880945,0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <name>아현큰약국</name>
-      <description>[약국] 허가일: 2026-07-08 | 주소: 서울특별시 마포구 마포대로 236, 1층 101호 (아현동, 예미원아파트) | 전화: 02-313-2723</description>
-      <styleUrl>#약국</styleUrl>
-      <Point>
-        <coordinates>126.957946204358,37.5547266354932,0</coordinates>
       </Point>
     </Placemark>
   </Document>
