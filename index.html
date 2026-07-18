@@ -358,6 +358,106 @@ const INLINE_GEOJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
+          126.951472218711,
+          37.4973917695303
+        ]
+      },
+      "properties": {
+        "name": "상도삼성정형외과의원",
+        "category": "의원",
+        "address": "서울특별시 동작구 상도로62길 81-1, 지하1층 B101호 (상도동, 씨티아모리움)",
+        "phone": "02-6265-0119",
+        "date": "2026-07-16",
+        "sido": "서울특별시",
+        "sigungu": "동작구",
+        "color": "#3498db"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.940976070604,
+          37.505422071137
+        ]
+      },
+      "properties": {
+        "name": "365동작아산위풍당당재활의학과의원",
+        "category": "의원",
+        "address": "서울특별시 동작구 상도로 195, 상가1층 103~112호 (노량진동, 힐스테이트 장승배기역)",
+        "phone": "02-824-1119",
+        "date": "2026-07-16",
+        "sido": "서울특별시",
+        "sigungu": "동작구",
+        "color": "#3498db"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.117225276267,
+          37.6679338052348
+        ]
+      },
+      "properties": {
+        "name": "별내소담약국",
+        "category": "약국",
+        "address": "경기도 남양주시 덕송2로 62, 114호 (별내동)",
+        "phone": "",
+        "date": "2026-07-16",
+        "sido": "경기도",
+        "sigungu": "남양주시",
+        "color": "#2ecc71"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.12372516244,
+          37.4948911658007
+        ]
+      },
+      "properties": {
+        "name": "송파프라임온누리약국",
+        "category": "약국",
+        "address": "서울특별시 송파구 중대로 140, 1층 (가락동)",
+        "phone": "02-401-5185",
+        "date": "2026-07-16",
+        "sido": "서울특별시",
+        "sigungu": "송파구",
+        "color": "#2ecc71"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.991929503414,
+          37.5700552055078
+        ]
+      },
+      "properties": {
+        "name": "선아약국",
+        "category": "약국",
+        "address": "서울특별시 종로구 수표로20길 43, 1층 (종로3가)",
+        "phone": "02-2273-7573",
+        "date": "2026-07-16",
+        "sido": "서울특별시",
+        "sigungu": "종로구",
+        "color": "#2ecc71"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           127.030009309581,
           37.4979246534828
         ]
@@ -632,53 +732,13 @@ const INLINE_GEOJSON = {
         "sigungu": "오산시",
         "color": "#3498db"
       }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          126.922368229397,
-          37.5562674192411
-        ]
-      },
-      "properties": {
-        "name": "홍대베러미의원",
-        "category": "의원",
-        "address": "서울특별시 마포구 양화로 151, 3층 일부, 4층 (동교동)",
-        "phone": "02-332-7025",
-        "date": "2026-07-10",
-        "sido": "서울특별시",
-        "sigungu": "마포구",
-        "color": "#3498db"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          126.988131479781,
-          37.5684799445977
-        ]
-      },
-      "properties": {
-        "name": "오블리브서울오리진의원",
-        "category": "의원",
-        "address": "서울특별시 종로구 청계천로 93, 파고다타워 지1,지상2,3,5층 (관철동)",
-        "phone": "02-6956-3438",
-        "date": "2026-07-10",
-        "sido": "서울특별시",
-        "sigungu": "종로구",
-        "color": "#3498db"
-      }
     }
   ]
 };
 const INLINE_KML = `<?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://www.opengis.net/kml/2.2">
   <Document>
-    <name>서울/경기 신규 허가 의료기관 (2026-07-17)</name>
+    <name>서울/경기 신규 허가 의료기관 (2026-07-18)</name>
     <description>의료기관 신규 허가 정보 (행정안전부 공공데이터)</description>
     <Style id="병원">
       <IconStyle>
@@ -704,6 +764,46 @@ const INLINE_KML = `<?xml version="1.0" encoding="UTF-8"?>
       <styleUrl>#약국</styleUrl>
       <Point>
         <coordinates>127.143336682535,37.617121834907,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>상도삼성정형외과의원</name>
+      <description>[의원] 허가일: 2026-07-16 | 주소: 서울특별시 동작구 상도로62길 81-1, 지하1층 B101호 (상도동, 씨티아모리움) | 전화: 02-6265-0119</description>
+      <styleUrl>#의원</styleUrl>
+      <Point>
+        <coordinates>126.951472218711,37.4973917695303,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>365동작아산위풍당당재활의학과의원</name>
+      <description>[의원] 허가일: 2026-07-16 | 주소: 서울특별시 동작구 상도로 195, 상가1층 103~112호 (노량진동, 힐스테이트 장승배기역) | 전화: 02-824-1119</description>
+      <styleUrl>#의원</styleUrl>
+      <Point>
+        <coordinates>126.940976070604,37.505422071137,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>별내소담약국</name>
+      <description>[약국] 허가일: 2026-07-16 | 주소: 경기도 남양주시 덕송2로 62, 114호 (별내동) | 전화: </description>
+      <styleUrl>#약국</styleUrl>
+      <Point>
+        <coordinates>127.117225276267,37.6679338052348,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>송파프라임온누리약국</name>
+      <description>[약국] 허가일: 2026-07-16 | 주소: 서울특별시 송파구 중대로 140, 1층 (가락동) | 전화: 02-401-5185</description>
+      <styleUrl>#약국</styleUrl>
+      <Point>
+        <coordinates>127.12372516244,37.4948911658007,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>선아약국</name>
+      <description>[약국] 허가일: 2026-07-16 | 주소: 서울특별시 종로구 수표로20길 43, 1층 (종로3가) | 전화: 02-2273-7573</description>
+      <styleUrl>#약국</styleUrl>
+      <Point>
+        <coordinates>126.991929503414,37.5700552055078,0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
@@ -816,22 +916,6 @@ const INLINE_KML = `<?xml version="1.0" encoding="UTF-8"?>
       <styleUrl>#의원</styleUrl>
       <Point>
         <coordinates>127.05218848538,37.1603736350645,0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <name>홍대베러미의원</name>
-      <description>[의원] 허가일: 2026-07-10 | 주소: 서울특별시 마포구 양화로 151, 3층 일부, 4층 (동교동) | 전화: 02-332-7025</description>
-      <styleUrl>#의원</styleUrl>
-      <Point>
-        <coordinates>126.922368229397,37.5562674192411,0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <name>오블리브서울오리진의원</name>
-      <description>[의원] 허가일: 2026-07-10 | 주소: 서울특별시 종로구 청계천로 93, 파고다타워 지1,지상2,3,5층 (관철동) | 전화: 02-6956-3438</description>
-      <styleUrl>#의원</styleUrl>
-      <Point>
-        <coordinates>126.988131479781,37.5684799445977,0</coordinates>
       </Point>
     </Placemark>
   </Document>
