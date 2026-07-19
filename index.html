@@ -398,6 +398,26 @@ const INLINE_GEOJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
+          127.059292282913,
+          37.6537175921478
+        ]
+      },
+      "properties": {
+        "name": "김앤손정신건강의학과의원",
+        "category": "의원",
+        "address": "서울특별시 노원구 노해로 460, 현대증권빌딩 9층 901호 (상계동)",
+        "phone": "02-6949-4026",
+        "date": "2026-07-16",
+        "sido": "서울특별시",
+        "sigungu": "노원구",
+        "color": "#3498db"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           127.117225276267,
           37.6679338052348
         ]
@@ -451,6 +471,26 @@ const INLINE_GEOJSON = {
         "sido": "서울특별시",
         "sigungu": "종로구",
         "color": "#2ecc71"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.030009309581,
+          37.4979246534828
+        ]
+      },
+      "properties": {
+        "name": "티성형외과의원",
+        "category": "의원",
+        "address": "서울특별시 강남구 테헤란로4길 5, 해암빌딩 2층 5층 일부호 (역삼동)",
+        "phone": "02-3452-7585",
+        "date": "2026-07-15",
+        "sido": "서울특별시",
+        "sigungu": "강남구",
+        "color": "#3498db"
       }
     },
     {
@@ -738,7 +778,7 @@ const INLINE_GEOJSON = {
 const INLINE_KML = `<?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://www.opengis.net/kml/2.2">
   <Document>
-    <name>서울/경기 신규 허가 의료기관 (2026-07-18)</name>
+    <name>서울/경기 신규 허가 의료기관 (2026-07-19)</name>
     <description>의료기관 신규 허가 정보 (행정안전부 공공데이터)</description>
     <Style id="병원">
       <IconStyle>
@@ -783,6 +823,14 @@ const INLINE_KML = `<?xml version="1.0" encoding="UTF-8"?>
       </Point>
     </Placemark>
     <Placemark>
+      <name>김앤손정신건강의학과의원</name>
+      <description>[의원] 허가일: 2026-07-16 | 주소: 서울특별시 노원구 노해로 460, 현대증권빌딩 9층 901호 (상계동) | 전화: 02-6949-4026</description>
+      <styleUrl>#의원</styleUrl>
+      <Point>
+        <coordinates>127.059292282913,37.6537175921478,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
       <name>별내소담약국</name>
       <description>[약국] 허가일: 2026-07-16 | 주소: 경기도 남양주시 덕송2로 62, 114호 (별내동) | 전화: </description>
       <styleUrl>#약국</styleUrl>
@@ -804,6 +852,14 @@ const INLINE_KML = `<?xml version="1.0" encoding="UTF-8"?>
       <styleUrl>#약국</styleUrl>
       <Point>
         <coordinates>126.991929503414,37.5700552055078,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>티성형외과의원</name>
+      <description>[의원] 허가일: 2026-07-15 | 주소: 서울특별시 강남구 테헤란로4길 5, 해암빌딩 2층 5층 일부호 (역삼동) | 전화: 02-3452-7585</description>
+      <styleUrl>#의원</styleUrl>
+      <Point>
+        <coordinates>127.030009309581,37.4979246534828,0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
