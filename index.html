@@ -358,6 +358,26 @@ const INLINE_GEOJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
+          127.023380583993,
+          37.5173531693456
+        ]
+      },
+      "properties": {
+        "name": "코랄성형외과의원",
+        "category": "의원",
+        "address": "서울특별시 강남구 도산대로 134, 10층 (논현동)",
+        "phone": "02-516-8333",
+        "date": "2026-07-16",
+        "sido": "서울특별시",
+        "sigungu": "강남구",
+        "color": "#3498db"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           126.951472218711,
           37.4973917695303
         ]
@@ -752,33 +772,13 @@ const INLINE_GEOJSON = {
         "sigungu": "동대문구",
         "color": "#2ecc71"
       }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          127.05218848538,
-          37.1603736350645
-        ]
-      },
-      "properties": {
-        "name": "오산세교정신건강의학과의원",
-        "category": "의원",
-        "address": "경기도 오산시 죽담1로 29, 2층 202호 (궐동)",
-        "phone": "031-831-3665",
-        "date": "2026-07-12",
-        "sido": "경기도",
-        "sigungu": "오산시",
-        "color": "#3498db"
-      }
     }
   ]
 };
 const INLINE_KML = `<?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://www.opengis.net/kml/2.2">
   <Document>
-    <name>서울/경기 신규 허가 의료기관 (2026-07-19)</name>
+    <name>서울/경기 신규 허가 의료기관 (2026-07-20)</name>
     <description>의료기관 신규 허가 정보 (행정안전부 공공데이터)</description>
     <Style id="병원">
       <IconStyle>
@@ -804,6 +804,14 @@ const INLINE_KML = `<?xml version="1.0" encoding="UTF-8"?>
       <styleUrl>#약국</styleUrl>
       <Point>
         <coordinates>127.143336682535,37.617121834907,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>코랄성형외과의원</name>
+      <description>[의원] 허가일: 2026-07-16 | 주소: 서울특별시 강남구 도산대로 134, 10층 (논현동) | 전화: 02-516-8333</description>
+      <styleUrl>#의원</styleUrl>
+      <Point>
+        <coordinates>127.023380583993,37.5173531693456,0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
@@ -964,14 +972,6 @@ const INLINE_KML = `<?xml version="1.0" encoding="UTF-8"?>
       <styleUrl>#약국</styleUrl>
       <Point>
         <coordinates>127.038045164857,37.5786265503925,0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <name>오산세교정신건강의학과의원</name>
-      <description>[의원] 허가일: 2026-07-12 | 주소: 경기도 오산시 죽담1로 29, 2층 202호 (궐동) | 전화: 031-831-3665</description>
-      <styleUrl>#의원</styleUrl>
-      <Point>
-        <coordinates>127.05218848538,37.1603736350645,0</coordinates>
       </Point>
     </Placemark>
   </Document>
