@@ -338,6 +338,86 @@ const INLINE_GEOJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
+          126.782682966274,
+          37.438877538147
+        ]
+      },
+      "properties": {
+        "name": "삼성메디컬의원",
+        "category": "의원",
+        "address": "경기도 시흥시 수인로3381번길 27, 2층 (신천동)",
+        "phone": "031-365-4325",
+        "date": "2026-07-23",
+        "sido": "경기도",
+        "sigungu": "시흥시",
+        "color": "#3498db"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.050563059147,
+          37.7503693471011
+        ]
+      },
+      "properties": {
+        "name": "우리삼성내과의원",
+        "category": "의원",
+        "address": "경기도 의정부시 동일로 713, 을지타워 3층 313호 (금오동)",
+        "phone": "031-843-7582",
+        "date": "2026-07-23",
+        "sido": "경기도",
+        "sigungu": "의정부시",
+        "color": "#3498db"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.03774745119,
+          37.5223519106434
+        ]
+      },
+      "properties": {
+        "name": "버틀러성형외과의원",
+        "category": "의원",
+        "address": "서울특별시 강남구 도산대로 326, 대동타워 7층 (논현동)",
+        "phone": "02-547-8777",
+        "date": "2026-07-23",
+        "sido": "서울특별시",
+        "sigungu": "강남구",
+        "color": "#3498db"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.754526582068,
+          37.6645540981816
+        ]
+      },
+      "properties": {
+        "name": "일산메가약국",
+        "category": "약국",
+        "address": "경기도 고양시 일산서구 한류월드로 300, 고양 원마운트 1층 1125~1128,1147호 (대화동)",
+        "phone": "031-961-6565",
+        "date": "2026-07-23",
+        "sido": "경기도",
+        "sigungu": "고양시",
+        "color": "#2ecc71"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           127.027197088046,
           37.5244576611004
         ]
@@ -411,6 +491,26 @@ const INLINE_GEOJSON = {
         "sido": "서울특별시",
         "sigungu": "강남구",
         "color": "#3498db"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.791679588506,
+          37.6843615764622
+        ]
+      },
+      "properties": {
+        "name": "주차장넓은약국",
+        "category": "약국",
+        "address": "경기도 고양시 일산동구 성석로 48, 2층 일부호 (중산동)",
+        "phone": "",
+        "date": "2026-07-21",
+        "sido": "경기도",
+        "sigungu": "고양시",
+        "color": "#2ecc71"
       }
     },
     {
@@ -572,33 +672,13 @@ const INLINE_GEOJSON = {
         "sigungu": "중구",
         "color": "#2ecc71"
       }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          127.143336682535,
-          37.617121834907
-        ]
-      },
-      "properties": {
-        "name": "메가타운약국 구리점",
-        "category": "약국",
-        "address": "경기도 구리시 동구릉로200번길 110, 구리농업협동조합 2층 203, 204, 205호 (인창동)",
-        "phone": "031-562-3650",
-        "date": "2026-07-17",
-        "sido": "경기도",
-        "sigungu": "구리시",
-        "color": "#2ecc71"
-      }
     }
   ]
 };
 const INLINE_KML = `<?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://www.opengis.net/kml/2.2">
   <Document>
-    <name>서울/경기 신규 허가 의료기관 (2026-07-24)</name>
+    <name>서울/경기 신규 허가 의료기관 (2026-07-25)</name>
     <description>의료기관 신규 허가 정보 (행정안전부 공공데이터)</description>
     <Style id="병원">
       <IconStyle>
@@ -618,6 +698,38 @@ const INLINE_KML = `<?xml version="1.0" encoding="UTF-8"?>
         <Icon><href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href></Icon>
       </IconStyle>
     </Style>
+    <Placemark>
+      <name>삼성메디컬의원</name>
+      <description>[의원] 허가일: 2026-07-23 | 주소: 경기도 시흥시 수인로3381번길 27, 2층 (신천동) | 전화: 031-365-4325</description>
+      <styleUrl>#의원</styleUrl>
+      <Point>
+        <coordinates>126.782682966274,37.438877538147,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>우리삼성내과의원</name>
+      <description>[의원] 허가일: 2026-07-23 | 주소: 경기도 의정부시 동일로 713, 을지타워 3층 313호 (금오동) | 전화: 031-843-7582</description>
+      <styleUrl>#의원</styleUrl>
+      <Point>
+        <coordinates>127.050563059147,37.7503693471011,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>버틀러성형외과의원</name>
+      <description>[의원] 허가일: 2026-07-23 | 주소: 서울특별시 강남구 도산대로 326, 대동타워 7층 (논현동) | 전화: 02-547-8777</description>
+      <styleUrl>#의원</styleUrl>
+      <Point>
+        <coordinates>127.03774745119,37.5223519106434,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>일산메가약국</name>
+      <description>[약국] 허가일: 2026-07-23 | 주소: 경기도 고양시 일산서구 한류월드로 300, 고양 원마운트 1층 1125~1128,1147호 (대화동) | 전화: 031-961-6565</description>
+      <styleUrl>#약국</styleUrl>
+      <Point>
+        <coordinates>126.754526582068,37.6645540981816,0</coordinates>
+      </Point>
+    </Placemark>
     <Placemark>
       <name>페이스랩의원</name>
       <description>[의원] 허가일: 2026-07-22 | 주소: 서울특별시 강남구 논현로167길 11, 6층 (신사동) | 전화: 02-511-7119</description>
@@ -648,6 +760,14 @@ const INLINE_KML = `<?xml version="1.0" encoding="UTF-8"?>
       <styleUrl>#의원</styleUrl>
       <Point>
         <coordinates>127.046430203643,37.5272326091164,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>주차장넓은약국</name>
+      <description>[약국] 허가일: 2026-07-21 | 주소: 경기도 고양시 일산동구 성석로 48, 2층 일부호 (중산동) | 전화: </description>
+      <styleUrl>#약국</styleUrl>
+      <Point>
+        <coordinates>126.791679588506,37.6843615764622,0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
@@ -712,14 +832,6 @@ const INLINE_KML = `<?xml version="1.0" encoding="UTF-8"?>
       <styleUrl>#약국</styleUrl>
       <Point>
         <coordinates>126.985843269067,37.5619678328665,0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <name>메가타운약국 구리점</name>
-      <description>[약국] 허가일: 2026-07-17 | 주소: 경기도 구리시 동구릉로200번길 110, 구리농업협동조합 2층 203, 204, 205호 (인창동) | 전화: 031-562-3650</description>
-      <styleUrl>#약국</styleUrl>
-      <Point>
-        <coordinates>127.143336682535,37.617121834907,0</coordinates>
       </Point>
     </Placemark>
   </Document>
