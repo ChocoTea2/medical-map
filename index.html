@@ -398,6 +398,26 @@ const INLINE_GEOJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
+          126.985166774442,
+          37.5625312330845
+        ]
+      },
+      "properties": {
+        "name": "명동세라미크글로벌의원",
+        "category": "의원",
+        "address": "서울특별시 중구 명동8길 27, 엠 플라자 4층 (명동2가)",
+        "phone": "02-6953-2264",
+        "date": "2026-07-27",
+        "sido": "서울특별시",
+        "sigungu": "중구",
+        "color": "#3498db"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           127.076318716284,
           37.2666668413529
         ]
@@ -652,53 +672,13 @@ const INLINE_GEOJSON = {
         "sigungu": "안산시",
         "color": "#2ecc71"
       }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          126.814801193318,
-          37.7283681918899
-        ]
-      },
-      "properties": {
-        "name": "삼성의원",
-        "category": "의원",
-        "address": "경기도 파주시 조리읍 대원로 66, 그린시티동문아파트 1층 101호",
-        "phone": "031-979-4384",
-        "date": "2026-07-22",
-        "sido": "경기도",
-        "sigungu": "파주시",
-        "color": "#3498db"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          127.027197088046,
-          37.5244576611004
-        ]
-      },
-      "properties": {
-        "name": "페이스랩의원",
-        "category": "의원",
-        "address": "서울특별시 강남구 논현로167길 11, 6층 (신사동)",
-        "phone": "02-511-7119",
-        "date": "2026-07-22",
-        "sido": "서울특별시",
-        "sigungu": "강남구",
-        "color": "#3498db"
-      }
     }
   ]
 };
 const INLINE_KML = `<?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://www.opengis.net/kml/2.2">
   <Document>
-    <name>서울/경기 신규 허가 의료기관 (2026-07-29)</name>
+    <name>서울/경기 신규 허가 의료기관 (2026-07-30)</name>
     <description>의료기관 신규 허가 정보 (행정안전부 공공데이터)</description>
     <Style id="병원">
       <IconStyle>
@@ -740,6 +720,14 @@ const INLINE_KML = `<?xml version="1.0" encoding="UTF-8"?>
       <styleUrl>#의원</styleUrl>
       <Point>
         <coordinates>127.028422526103,37.4974495848055,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>명동세라미크글로벌의원</name>
+      <description>[의원] 허가일: 2026-07-27 | 주소: 서울특별시 중구 명동8길 27, 엠 플라자 4층 (명동2가) | 전화: 02-6953-2264</description>
+      <styleUrl>#의원</styleUrl>
+      <Point>
+        <coordinates>126.985166774442,37.5625312330845,0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
@@ -844,22 +832,6 @@ const INLINE_KML = `<?xml version="1.0" encoding="UTF-8"?>
       <styleUrl>#약국</styleUrl>
       <Point>
         <coordinates>126.852105406485,37.2802331509712,0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <name>삼성의원</name>
-      <description>[의원] 허가일: 2026-07-22 | 주소: 경기도 파주시 조리읍 대원로 66, 그린시티동문아파트 1층 101호 | 전화: 031-979-4384</description>
-      <styleUrl>#의원</styleUrl>
-      <Point>
-        <coordinates>126.814801193318,37.7283681918899,0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <name>페이스랩의원</name>
-      <description>[의원] 허가일: 2026-07-22 | 주소: 서울특별시 강남구 논현로167길 11, 6층 (신사동) | 전화: 02-511-7119</description>
-      <styleUrl>#의원</styleUrl>
-      <Point>
-        <coordinates>127.027197088046,37.5244576611004,0</coordinates>
       </Point>
     </Placemark>
   </Document>
