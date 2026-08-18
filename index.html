@@ -338,6 +338,26 @@ const INLINE_GEOJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
+          127.009229259471,
+          37.3021277748671
+        ]
+      },
+      "properties": {
+        "name": "바다약국",
+        "category": "약국",
+        "address": "경기도 수원시 장안구 송원로 81, A동 3층 305호 (조원동)",
+        "phone": "031-308-8553",
+        "date": "2026-08-18",
+        "sido": "경기도",
+        "sigungu": "수원시",
+        "color": "#2ecc71"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           127.069099117823,
           37.2985191349663
         ]
@@ -772,73 +792,13 @@ const INLINE_GEOJSON = {
         "sigungu": "성동구",
         "color": "#2ecc71"
       }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          126.777414179593,
-          37.6826524011622
-        ]
-      },
-      "properties": {
-        "name": "일산베스트신경외과의원",
-        "category": "의원",
-        "address": "경기도 고양시 일산서구 고양대로 734, 2층, 3층 전체호 (일산동)",
-        "phone": "031-976-3650",
-        "date": "2026-08-10",
-        "sido": "경기도",
-        "sigungu": "고양시",
-        "color": "#3498db"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          126.929805679,
-          36.9880738130802
-        ]
-      },
-      "properties": {
-        "name": "사랑방약국",
-        "category": "약국",
-        "address": "경기도 평택시 안중읍 안현로서2길 19",
-        "phone": "031-8094-4082",
-        "date": "2026-08-10",
-        "sido": "경기도",
-        "sigungu": "평택시",
-        "color": "#2ecc71"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          127.024082467223,
-          37.5666029325047
-        ]
-      },
-      "properties": {
-        "name": "도선약국",
-        "category": "약국",
-        "address": "서울특별시 성동구 왕십리로 410, L동 2층 222호 (하왕십리동, 센트라스)",
-        "phone": "02-6949-1986",
-        "date": "2026-08-10",
-        "sido": "서울특별시",
-        "sigungu": "성동구",
-        "color": "#2ecc71"
-      }
     }
   ]
 };
 const INLINE_KML = `<?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://www.opengis.net/kml/2.2">
   <Document>
-    <name>서울/경기 신규 허가 의료기관 (2026-08-17)</name>
+    <name>서울/경기 신규 허가 의료기관 (2026-08-18)</name>
     <description>의료기관 신규 허가 정보 (행정안전부 공공데이터)</description>
     <Style id="병원">
       <IconStyle>
@@ -858,6 +818,14 @@ const INLINE_KML = `<?xml version="1.0" encoding="UTF-8"?>
         <Icon><href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href></Icon>
       </IconStyle>
     </Style>
+    <Placemark>
+      <name>바다약국</name>
+      <description>[약국] 허가일: 2026-08-18 | 주소: 경기도 수원시 장안구 송원로 81, A동 3층 305호 (조원동) | 전화: 031-308-8553</description>
+      <styleUrl>#약국</styleUrl>
+      <Point>
+        <coordinates>127.009229259471,37.3021277748671,0</coordinates>
+      </Point>
+    </Placemark>
     <Placemark>
       <name>하루영의원</name>
       <description>[의원] 허가일: 2026-08-14 | 주소: 경기도 용인시 수지구 광교중앙로 319, 광교스타 천 3층 301,302호 (상현동) | 전화: 031-215-0424</description>
@@ -1032,30 +1000,6 @@ const INLINE_KML = `<?xml version="1.0" encoding="UTF-8"?>
       <styleUrl>#약국</styleUrl>
       <Point>
         <coordinates>127.019324744856,37.5539048865789,0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <name>일산베스트신경외과의원</name>
-      <description>[의원] 허가일: 2026-08-10 | 주소: 경기도 고양시 일산서구 고양대로 734, 2층, 3층 전체호 (일산동) | 전화: 031-976-3650</description>
-      <styleUrl>#의원</styleUrl>
-      <Point>
-        <coordinates>126.777414179593,37.6826524011622,0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <name>사랑방약국</name>
-      <description>[약국] 허가일: 2026-08-10 | 주소: 경기도 평택시 안중읍 안현로서2길 19 | 전화: 031-8094-4082</description>
-      <styleUrl>#약국</styleUrl>
-      <Point>
-        <coordinates>126.929805679,36.9880738130802,0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <name>도선약국</name>
-      <description>[약국] 허가일: 2026-08-10 | 주소: 서울특별시 성동구 왕십리로 410, L동 2층 222호 (하왕십리동, 센트라스) | 전화: 02-6949-1986</description>
-      <styleUrl>#약국</styleUrl>
-      <Point>
-        <coordinates>127.024082467223,37.5666029325047,0</coordinates>
       </Point>
     </Placemark>
   </Document>
