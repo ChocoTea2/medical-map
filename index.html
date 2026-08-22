@@ -338,6 +338,46 @@ const INLINE_GEOJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
+          127.027637005361,
+          37.4989106629232
+        ]
+      },
+      "properties": {
+        "name": "올리움의원",
+        "category": "의원",
+        "address": "서울특별시 강남구 강남대로 406, GLASS TOWER 지하1층 (역삼동)",
+        "phone": "",
+        "date": "2026-08-20",
+        "sido": "서울특별시",
+        "sigungu": "강남구",
+        "color": "#3498db"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.040414963913,
+          37.5262458809486
+        ]
+      },
+      "properties": {
+        "name": "청담원더팜약국",
+        "category": "약국",
+        "address": "서울특별시 강남구 선릉로 832, 소나무빌딩 지하1층 (청담동)",
+        "phone": "02-544-0999",
+        "date": "2026-08-20",
+        "sido": "서울특별시",
+        "sigungu": "강남구",
+        "color": "#2ecc71"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           126.893964438219,
           37.4455277787107
         ]
@@ -532,113 +572,13 @@ const INLINE_GEOJSON = {
         "sigungu": "성동구",
         "color": "#2ecc71"
       }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          127.069099117823,
-          37.2985191349663
-        ]
-      },
-      "properties": {
-        "name": "하루영의원",
-        "category": "의원",
-        "address": "경기도 용인시 수지구 광교중앙로 319, 광교스타 천 3층 301,302호 (상현동)",
-        "phone": "031-215-0424",
-        "date": "2026-08-14",
-        "sido": "경기도",
-        "sigungu": "용인시",
-        "color": "#3498db"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          127.10674019317,
-          37.3668065541423
-        ]
-      },
-      "properties": {
-        "name": "슬로우웰의원",
-        "category": "의원",
-        "address": "경기도 성남시 분당구 성남대로343번길 12-2, 3층 (정자동)",
-        "phone": "031-715-2223",
-        "date": "2026-08-14",
-        "sido": "경기도",
-        "sigungu": "성남시",
-        "color": "#3498db"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          127.032811501034,
-          37.5240704255681
-        ]
-      },
-      "properties": {
-        "name": "청담라플라스의원",
-        "category": "의원",
-        "address": "서울특별시 강남구 언주로 827, 스페이스 씨 3,4층 (신사동)",
-        "phone": "02-514-0011",
-        "date": "2026-08-14",
-        "sido": "서울특별시",
-        "sigungu": "강남구",
-        "color": "#3498db"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          127.061953428367,
-          37.2368037326095
-        ]
-      },
-      "properties": {
-        "name": "온약국",
-        "category": "약국",
-        "address": "경기도 화성시 병점구 영통로60번길 7, 2층 231호 (반월동)",
-        "phone": "031-548-2462",
-        "date": "2026-08-14",
-        "sido": "경기도",
-        "sigungu": "화성시",
-        "color": "#2ecc71"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          126.950847479316,
-          37.5450686146253
-        ]
-      },
-      "properties": {
-        "name": "공덕씨티약국",
-        "category": "약국",
-        "address": "서울특별시 마포구 마포대로 109, 제지1층 제비101-6호 (공덕동, 롯데캐슬 프레지던트)",
-        "phone": "",
-        "date": "2026-08-14",
-        "sido": "서울특별시",
-        "sigungu": "마포구",
-        "color": "#2ecc71"
-      }
     }
   ]
 };
 const INLINE_KML = `<?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://www.opengis.net/kml/2.2">
   <Document>
-    <name>서울/경기 신규 허가 의료기관 (2026-08-21)</name>
+    <name>서울/경기 신규 허가 의료기관 (2026-08-22)</name>
     <description>의료기관 신규 허가 정보 (행정안전부 공공데이터)</description>
     <Style id="병원">
       <IconStyle>
@@ -658,6 +598,22 @@ const INLINE_KML = `<?xml version="1.0" encoding="UTF-8"?>
         <Icon><href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href></Icon>
       </IconStyle>
     </Style>
+    <Placemark>
+      <name>올리움의원</name>
+      <description>[의원] 허가일: 2026-08-20 | 주소: 서울특별시 강남구 강남대로 406, GLASS TOWER 지하1층 (역삼동) | 전화: </description>
+      <styleUrl>#의원</styleUrl>
+      <Point>
+        <coordinates>127.027637005361,37.4989106629232,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>청담원더팜약국</name>
+      <description>[약국] 허가일: 2026-08-20 | 주소: 서울특별시 강남구 선릉로 832, 소나무빌딩 지하1층 (청담동) | 전화: 02-544-0999</description>
+      <styleUrl>#약국</styleUrl>
+      <Point>
+        <coordinates>127.040414963913,37.5262458809486,0</coordinates>
+      </Point>
+    </Placemark>
     <Placemark>
       <name>진액셀 메디컬의원</name>
       <description>[의원] 허가일: 2026-08-19 | 주소: 경기도 광명시 소하로 190, 광명G타워 2층 234~235호 (소하동) | 전화: </description>
@@ -736,46 +692,6 @@ const INLINE_KML = `<?xml version="1.0" encoding="UTF-8"?>
       <styleUrl>#약국</styleUrl>
       <Point>
         <coordinates>127.024975206745,37.5554381356425,0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <name>하루영의원</name>
-      <description>[의원] 허가일: 2026-08-14 | 주소: 경기도 용인시 수지구 광교중앙로 319, 광교스타 천 3층 301,302호 (상현동) | 전화: 031-215-0424</description>
-      <styleUrl>#의원</styleUrl>
-      <Point>
-        <coordinates>127.069099117823,37.2985191349663,0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <name>슬로우웰의원</name>
-      <description>[의원] 허가일: 2026-08-14 | 주소: 경기도 성남시 분당구 성남대로343번길 12-2, 3층 (정자동) | 전화: 031-715-2223</description>
-      <styleUrl>#의원</styleUrl>
-      <Point>
-        <coordinates>127.10674019317,37.3668065541423,0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <name>청담라플라스의원</name>
-      <description>[의원] 허가일: 2026-08-14 | 주소: 서울특별시 강남구 언주로 827, 스페이스 씨 3,4층 (신사동) | 전화: 02-514-0011</description>
-      <styleUrl>#의원</styleUrl>
-      <Point>
-        <coordinates>127.032811501034,37.5240704255681,0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <name>온약국</name>
-      <description>[약국] 허가일: 2026-08-14 | 주소: 경기도 화성시 병점구 영통로60번길 7, 2층 231호 (반월동) | 전화: 031-548-2462</description>
-      <styleUrl>#약국</styleUrl>
-      <Point>
-        <coordinates>127.061953428367,37.2368037326095,0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <name>공덕씨티약국</name>
-      <description>[약국] 허가일: 2026-08-14 | 주소: 서울특별시 마포구 마포대로 109, 제지1층 제비101-6호 (공덕동, 롯데캐슬 프레지던트) | 전화: </description>
-      <styleUrl>#약국</styleUrl>
-      <Point>
-        <coordinates>126.950847479316,37.5450686146253,0</coordinates>
       </Point>
     </Placemark>
   </Document>
