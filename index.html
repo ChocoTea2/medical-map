@@ -338,6 +338,46 @@ const INLINE_GEOJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
+          127.048309344122,
+          37.6229729783825
+        ]
+      },
+      "properties": {
+        "name": "연세숲가정의학과의원",
+        "category": "의원",
+        "address": "서울특별시 성북구 월계로40길 7, 센트럴타운 3층 301호 (장위동)",
+        "phone": "02-942-0753",
+        "date": "2026-08-21",
+        "sido": "서울특별시",
+        "sigungu": "성북구",
+        "color": "#3498db"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.598779076508,
+          37.689141235105
+        ]
+      },
+      "properties": {
+        "name": "통진푸른약국",
+        "category": "약국",
+        "address": "경기도 김포시 통진읍 김포대로 2225, 통진메디칼타워 103호",
+        "phone": "031-983-5667",
+        "date": "2026-08-21",
+        "sido": "경기도",
+        "sigungu": "김포시",
+        "color": "#2ecc71"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           127.027637005361,
           37.4989106629232
         ]
@@ -371,6 +411,26 @@ const INLINE_GEOJSON = {
         "sido": "서울특별시",
         "sigungu": "강남구",
         "color": "#2ecc71"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.097923632495,
+          37.2022219858229
+        ]
+      },
+      "properties": {
+        "name": "동탄닥터에버스의원",
+        "category": "의원",
+        "address": "경기도 화성시 동탄구 동탄대로 537, A동 517~523호 (여울동)",
+        "phone": "031-373-2006",
+        "date": "2026-08-19",
+        "sido": "경기도",
+        "sigungu": "화성시",
+        "color": "#3498db"
       }
     },
     {
@@ -431,6 +491,26 @@ const INLINE_GEOJSON = {
         "sido": "경기도",
         "sigungu": "이천시",
         "color": "#2ecc71"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.025511220431,
+          37.5013634093685
+        ]
+      },
+      "properties": {
+        "name": "나야의원",
+        "category": "의원",
+        "address": "서울특별시 서초구 강남대로 437, 대원빌딩 9층 (서초동)",
+        "phone": "",
+        "date": "2026-08-18",
+        "sido": "서울특별시",
+        "sigungu": "서초구",
+        "color": "#3498db"
       }
     },
     {
@@ -578,7 +658,7 @@ const INLINE_GEOJSON = {
 const INLINE_KML = `<?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://www.opengis.net/kml/2.2">
   <Document>
-    <name>서울/경기 신규 허가 의료기관 (2026-08-22)</name>
+    <name>서울/경기 신규 허가 의료기관 (2026-08-23)</name>
     <description>의료기관 신규 허가 정보 (행정안전부 공공데이터)</description>
     <Style id="병원">
       <IconStyle>
@@ -599,6 +679,22 @@ const INLINE_KML = `<?xml version="1.0" encoding="UTF-8"?>
       </IconStyle>
     </Style>
     <Placemark>
+      <name>연세숲가정의학과의원</name>
+      <description>[의원] 허가일: 2026-08-21 | 주소: 서울특별시 성북구 월계로40길 7, 센트럴타운 3층 301호 (장위동) | 전화: 02-942-0753</description>
+      <styleUrl>#의원</styleUrl>
+      <Point>
+        <coordinates>127.048309344122,37.6229729783825,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>통진푸른약국</name>
+      <description>[약국] 허가일: 2026-08-21 | 주소: 경기도 김포시 통진읍 김포대로 2225, 통진메디칼타워 103호 | 전화: 031-983-5667</description>
+      <styleUrl>#약국</styleUrl>
+      <Point>
+        <coordinates>126.598779076508,37.689141235105,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
       <name>올리움의원</name>
       <description>[의원] 허가일: 2026-08-20 | 주소: 서울특별시 강남구 강남대로 406, GLASS TOWER 지하1층 (역삼동) | 전화: </description>
       <styleUrl>#의원</styleUrl>
@@ -612,6 +708,14 @@ const INLINE_KML = `<?xml version="1.0" encoding="UTF-8"?>
       <styleUrl>#약국</styleUrl>
       <Point>
         <coordinates>127.040414963913,37.5262458809486,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>동탄닥터에버스의원</name>
+      <description>[의원] 허가일: 2026-08-19 | 주소: 경기도 화성시 동탄구 동탄대로 537, A동 517~523호 (여울동) | 전화: 031-373-2006</description>
+      <styleUrl>#의원</styleUrl>
+      <Point>
+        <coordinates>127.097923632495,37.2022219858229,0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
@@ -636,6 +740,14 @@ const INLINE_KML = `<?xml version="1.0" encoding="UTF-8"?>
       <styleUrl>#약국</styleUrl>
       <Point>
         <coordinates>127.490314921172,37.2521071817627,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>나야의원</name>
+      <description>[의원] 허가일: 2026-08-18 | 주소: 서울특별시 서초구 강남대로 437, 대원빌딩 9층 (서초동) | 전화: </description>
+      <styleUrl>#의원</styleUrl>
+      <Point>
+        <coordinates>127.025511220431,37.5013634093685,0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
