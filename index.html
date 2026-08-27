@@ -338,6 +338,26 @@ const INLINE_GEOJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
+          127.110913203267,
+          37.2794042546741
+        ]
+      },
+      "properties": {
+        "name": "기흥마디튼튼의원",
+        "category": "의원",
+        "address": "경기도 용인시 기흥구 구갈로 55, C동 2층 (구갈동)",
+        "phone": "031-275-5551",
+        "date": "2026-08-25",
+        "sido": "경기도",
+        "sigungu": "용인시",
+        "color": "#3498db"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           126.842926301269,
           37.5185470431593
         ]
@@ -390,6 +410,26 @@ const INLINE_GEOJSON = {
         "date": "2026-08-24",
         "sido": "경기도",
         "sigungu": "성남시",
+        "color": "#2ecc71"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.102489000658,
+          37.6119441454331
+        ]
+      },
+      "properties": {
+        "name": "신내하나약국",
+        "category": "약국",
+        "address": "서울특별시 중랑구 용마산로 670, A동 130층 (망우동, 신내역 프라디움 더 테라스)",
+        "phone": "02-493-1110",
+        "date": "2026-08-24",
+        "sido": "서울특별시",
+        "sigungu": "중랑구",
         "color": "#2ecc71"
       }
     },
@@ -472,93 +512,13 @@ const INLINE_GEOJSON = {
         "sigungu": "강남구",
         "color": "#2ecc71"
       }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          127.097923632495,
-          37.2022219858229
-        ]
-      },
-      "properties": {
-        "name": "동탄닥터에버스의원",
-        "category": "의원",
-        "address": "경기도 화성시 동탄구 동탄대로 537, A동 517~523호 (여울동)",
-        "phone": "031-373-2006",
-        "date": "2026-08-19",
-        "sido": "경기도",
-        "sigungu": "화성시",
-        "color": "#3498db"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          126.893964438219,
-          37.4455277787107
-        ]
-      },
-      "properties": {
-        "name": "진액셀 메디컬의원",
-        "category": "의원",
-        "address": "경기도 광명시 소하로 190, 광명G타워 2층 234~235호 (소하동)",
-        "phone": "",
-        "date": "2026-08-19",
-        "sido": "경기도",
-        "sigungu": "광명시",
-        "color": "#3498db"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          127.019324744856,
-          37.5539048865789
-        ]
-      },
-      "properties": {
-        "name": "금호아산내과의원",
-        "category": "의원",
-        "address": "서울특별시 성동구 금호산길 63, 금호새마을금고 회관 2층 (금호동2가)",
-        "phone": "02-2233-0960",
-        "date": "2026-08-19",
-        "sido": "서울특별시",
-        "sigungu": "성동구",
-        "color": "#3498db"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          127.490314921172,
-          37.2521071817627
-        ]
-      },
-      "properties": {
-        "name": "다온약국",
-        "category": "약국",
-        "address": "경기도 이천시 부발읍 경충대로 2096-4, 1층 106호",
-        "phone": "031-636-8995",
-        "date": "2026-08-19",
-        "sido": "경기도",
-        "sigungu": "이천시",
-        "color": "#2ecc71"
-      }
     }
   ]
 };
 const INLINE_KML = `<?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://www.opengis.net/kml/2.2">
   <Document>
-    <name>서울/경기 신규 허가 의료기관 (2026-08-26)</name>
+    <name>서울/경기 신규 허가 의료기관 (2026-08-27)</name>
     <description>의료기관 신규 허가 정보 (행정안전부 공공데이터)</description>
     <Style id="병원">
       <IconStyle>
@@ -578,6 +538,14 @@ const INLINE_KML = `<?xml version="1.0" encoding="UTF-8"?>
         <Icon><href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href></Icon>
       </IconStyle>
     </Style>
+    <Placemark>
+      <name>기흥마디튼튼의원</name>
+      <description>[의원] 허가일: 2026-08-25 | 주소: 경기도 용인시 기흥구 구갈로 55, C동 2층 (구갈동) | 전화: 031-275-5551</description>
+      <styleUrl>#의원</styleUrl>
+      <Point>
+        <coordinates>127.110913203267,37.2794042546741,0</coordinates>
+      </Point>
+    </Placemark>
     <Placemark>
       <name>연세뇌몸하나재활의학과신경과의원</name>
       <description>[의원] 허가일: 2026-08-24 | 주소: 서울특별시 양천구 신월로 176, 2층 201,202호 (신월동) | 전화: 02-2691-8277</description>
@@ -600,6 +568,14 @@ const INLINE_KML = `<?xml version="1.0" encoding="UTF-8"?>
       <styleUrl>#약국</styleUrl>
       <Point>
         <coordinates>127.076060900899,37.3913775898636,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>신내하나약국</name>
+      <description>[약국] 허가일: 2026-08-24 | 주소: 서울특별시 중랑구 용마산로 670, A동 130층 (망우동, 신내역 프라디움 더 테라스) | 전화: 02-493-1110</description>
+      <styleUrl>#약국</styleUrl>
+      <Point>
+        <coordinates>127.102489000658,37.6119441454331,0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
@@ -632,38 +608,6 @@ const INLINE_KML = `<?xml version="1.0" encoding="UTF-8"?>
       <styleUrl>#약국</styleUrl>
       <Point>
         <coordinates>127.040414963913,37.5262458809486,0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <name>동탄닥터에버스의원</name>
-      <description>[의원] 허가일: 2026-08-19 | 주소: 경기도 화성시 동탄구 동탄대로 537, A동 517~523호 (여울동) | 전화: 031-373-2006</description>
-      <styleUrl>#의원</styleUrl>
-      <Point>
-        <coordinates>127.097923632495,37.2022219858229,0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <name>진액셀 메디컬의원</name>
-      <description>[의원] 허가일: 2026-08-19 | 주소: 경기도 광명시 소하로 190, 광명G타워 2층 234~235호 (소하동) | 전화: </description>
-      <styleUrl>#의원</styleUrl>
-      <Point>
-        <coordinates>126.893964438219,37.4455277787107,0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <name>금호아산내과의원</name>
-      <description>[의원] 허가일: 2026-08-19 | 주소: 서울특별시 성동구 금호산길 63, 금호새마을금고 회관 2층 (금호동2가) | 전화: 02-2233-0960</description>
-      <styleUrl>#의원</styleUrl>
-      <Point>
-        <coordinates>127.019324744856,37.5539048865789,0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <name>다온약국</name>
-      <description>[약국] 허가일: 2026-08-19 | 주소: 경기도 이천시 부발읍 경충대로 2096-4, 1층 106호 | 전화: 031-636-8995</description>
-      <styleUrl>#약국</styleUrl>
-      <Point>
-        <coordinates>127.490314921172,37.2521071817627,0</coordinates>
       </Point>
     </Placemark>
   </Document>
