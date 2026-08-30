@@ -338,6 +338,66 @@ const INLINE_GEOJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
+          127.047374610526,
+          37.1365622710633
+        ]
+      },
+      "properties": {
+        "name": "세교바른정형외과의원",
+        "category": "의원",
+        "address": "경기도 오산시 초평중앙로 26, 2층 (탑동)",
+        "phone": "031-8055-8636",
+        "date": "2026-08-28",
+        "sido": "경기도",
+        "sigungu": "오산시",
+        "color": "#3498db"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.217554199471,
+          37.2695650002637
+        ]
+      },
+      "properties": {
+        "name": "메디팜용인약국",
+        "category": "약국",
+        "address": "경기도 용인시 처인구 포곡읍 포곡로 109, 1층",
+        "phone": "031-339-9346",
+        "date": "2026-08-28",
+        "sido": "경기도",
+        "sigungu": "용인시",
+        "color": "#2ecc71"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.923010111576,
+          37.5542200524931
+        ]
+      },
+      "properties": {
+        "name": "뷰티온누리약국 무신사뷰티홍대점",
+        "category": "약국",
+        "address": "서울특별시 마포구 홍익로 18, 지하1층 (서교동)",
+        "phone": "",
+        "date": "2026-08-28",
+        "sido": "서울특별시",
+        "sigungu": "마포구",
+        "color": "#2ecc71"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           127.12429335936,
           37.3239455632056
         ]
@@ -558,6 +618,26 @@ const INLINE_GEOJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
+          126.9810075639,
+          37.5653458904198
+        ]
+      },
+      "properties": {
+        "name": "오가나셀피부과의원",
+        "category": "의원",
+        "address": "서울특별시 중구 을지로 30, 더그랜드롯데메인타워(본관) 9층 (소공동)",
+        "phone": "02-752-3200",
+        "date": "2026-08-25",
+        "sido": "서울특별시",
+        "sigungu": "중구",
+        "color": "#3498db"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           126.842926301269,
           37.5185470431593
         ]
@@ -658,7 +738,7 @@ const INLINE_GEOJSON = {
 const INLINE_KML = `<?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://www.opengis.net/kml/2.2">
   <Document>
-    <name>서울/경기 신규 허가 의료기관 (2026-08-29)</name>
+    <name>서울/경기 신규 허가 의료기관 (2026-08-30)</name>
     <description>의료기관 신규 허가 정보 (행정안전부 공공데이터)</description>
     <Style id="병원">
       <IconStyle>
@@ -678,6 +758,30 @@ const INLINE_KML = `<?xml version="1.0" encoding="UTF-8"?>
         <Icon><href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href></Icon>
       </IconStyle>
     </Style>
+    <Placemark>
+      <name>세교바른정형외과의원</name>
+      <description>[의원] 허가일: 2026-08-28 | 주소: 경기도 오산시 초평중앙로 26, 2층 (탑동) | 전화: 031-8055-8636</description>
+      <styleUrl>#의원</styleUrl>
+      <Point>
+        <coordinates>127.047374610526,37.1365622710633,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>메디팜용인약국</name>
+      <description>[약국] 허가일: 2026-08-28 | 주소: 경기도 용인시 처인구 포곡읍 포곡로 109, 1층 | 전화: 031-339-9346</description>
+      <styleUrl>#약국</styleUrl>
+      <Point>
+        <coordinates>127.217554199471,37.2695650002637,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>뷰티온누리약국 무신사뷰티홍대점</name>
+      <description>[약국] 허가일: 2026-08-28 | 주소: 서울특별시 마포구 홍익로 18, 지하1층 (서교동) | 전화: </description>
+      <styleUrl>#약국</styleUrl>
+      <Point>
+        <coordinates>126.923010111576,37.5542200524931,0</coordinates>
+      </Point>
+    </Placemark>
     <Placemark>
       <name>단대약국</name>
       <description>[약국] 허가일: 2026-08-27 | 주소: 경기도 용인시 수지구 죽전로 150, 단대프라자III 108호 (죽전동) | 전화: 031-266-1333</description>
@@ -764,6 +868,14 @@ const INLINE_KML = `<?xml version="1.0" encoding="UTF-8"?>
       <styleUrl>#의원</styleUrl>
       <Point>
         <coordinates>127.055233195315,37.4966225187716,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>오가나셀피부과의원</name>
+      <description>[의원] 허가일: 2026-08-25 | 주소: 서울특별시 중구 을지로 30, 더그랜드롯데메인타워(본관) 9층 (소공동) | 전화: 02-752-3200</description>
+      <styleUrl>#의원</styleUrl>
+      <Point>
+        <coordinates>126.9810075639,37.5653458904198,0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
