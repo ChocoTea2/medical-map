@@ -338,6 +338,46 @@ const INLINE_GEOJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
+          127.192991876605,
+          37.5615644351501
+        ]
+      },
+      "properties": {
+        "name": "365 하나약국",
+        "category": "약국",
+        "address": "경기도 하남시 미사강변동로 73, 미사강변 노블레스 112호, 113 일부호 (망월동)",
+        "phone": "031-8027-9191",
+        "date": "2026-08-31",
+        "sido": "경기도",
+        "sigungu": "하남시",
+        "color": "#2ecc71"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.025818806647,
+          37.5045804733076
+        ]
+      },
+      "properties": {
+        "name": "강남약국",
+        "category": "약국",
+        "address": "서울특별시 강남구 봉은사로 110, B1, B2층 (역삼동)",
+        "phone": "",
+        "date": "2026-08-31",
+        "sido": "서울특별시",
+        "sigungu": "강남구",
+        "color": "#2ecc71"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           127.047374610526,
           37.1365622710633
         ]
@@ -738,7 +778,7 @@ const INLINE_GEOJSON = {
 const INLINE_KML = `<?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://www.opengis.net/kml/2.2">
   <Document>
-    <name>서울/경기 신규 허가 의료기관 (2026-08-30)</name>
+    <name>서울/경기 신규 허가 의료기관 (2026-08-31)</name>
     <description>의료기관 신규 허가 정보 (행정안전부 공공데이터)</description>
     <Style id="병원">
       <IconStyle>
@@ -758,6 +798,22 @@ const INLINE_KML = `<?xml version="1.0" encoding="UTF-8"?>
         <Icon><href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href></Icon>
       </IconStyle>
     </Style>
+    <Placemark>
+      <name>365 하나약국</name>
+      <description>[약국] 허가일: 2026-08-31 | 주소: 경기도 하남시 미사강변동로 73, 미사강변 노블레스 112호, 113 일부호 (망월동) | 전화: 031-8027-9191</description>
+      <styleUrl>#약국</styleUrl>
+      <Point>
+        <coordinates>127.192991876605,37.5615644351501,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>강남약국</name>
+      <description>[약국] 허가일: 2026-08-31 | 주소: 서울특별시 강남구 봉은사로 110, B1, B2층 (역삼동) | 전화: </description>
+      <styleUrl>#약국</styleUrl>
+      <Point>
+        <coordinates>127.025818806647,37.5045804733076,0</coordinates>
+      </Point>
+    </Placemark>
     <Placemark>
       <name>세교바른정형외과의원</name>
       <description>[의원] 허가일: 2026-08-28 | 주소: 경기도 오산시 초평중앙로 26, 2층 (탑동) | 전화: 031-8055-8636</description>
