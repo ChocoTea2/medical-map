@@ -338,6 +338,46 @@ const INLINE_GEOJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
+          126.810994651595,
+          37.3002423628799
+        ]
+      },
+      "properties": {
+        "name": "디케이플러스의원",
+        "category": "의원",
+        "address": "경기도 안산시 단원구 원포공원로 10, 104호 (초지동)",
+        "phone": "031-402-6777",
+        "date": "2026-09-08",
+        "sido": "경기도",
+        "sigungu": "안산시",
+        "color": "#3498db"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.901704114396,
+          37.4822974416204
+        ]
+      },
+      "properties": {
+        "name": "센텀신경과의원",
+        "category": "의원",
+        "address": "서울특별시 관악구 시흥대로 554, 6층 (신림동)",
+        "phone": "02-000-0000",
+        "date": "2026-09-08",
+        "sido": "서울특별시",
+        "sigungu": "관악구",
+        "color": "#3498db"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           126.724692542003,
           37.3534707165972
         ]
@@ -652,113 +692,13 @@ const INLINE_GEOJSON = {
         "sigungu": "강남구",
         "color": "#2ecc71"
       }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          126.833294029086,
-          37.6333011345936
-        ]
-      },
-      "properties": {
-        "name": "팀닥터정형외과의원",
-        "category": "의원",
-        "address": "경기도 고양시 덕양구 화신로260번길 58, 비전프라자 301,302,303,304호 (화정동)",
-        "phone": "031-970-7588",
-        "date": "2026-09-02",
-        "sido": "경기도",
-        "sigungu": "고양시",
-        "color": "#3498db"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          127.077357791714,
-          37.3913125957774
-        ]
-      },
-      "properties": {
-        "name": "365판교튼튼재활의학과의원",
-        "category": "의원",
-        "address": "경기도 성남시 분당구 운중로 128, 마크시티그린 2층 201.202.203호 (운중동)",
-        "phone": "031-706-9111",
-        "date": "2026-09-02",
-        "sido": "경기도",
-        "sigungu": "성남시",
-        "color": "#3498db"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          127.135779712533,
-          37.5278730429962
-        ]
-      },
-      "properties": {
-        "name": "강동속편한내과의원",
-        "category": "의원",
-        "address": "서울특별시 강동구 양재대로 1363, 3층 (성내동)",
-        "phone": "02-2039-6060",
-        "date": "2026-09-02",
-        "sido": "서울특별시",
-        "sigungu": "강동구",
-        "color": "#3498db"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          127.034451103421,
-          37.5192980678283
-        ]
-      },
-      "properties": {
-        "name": "포브의원",
-        "category": "의원",
-        "address": "서울특별시 강남구 언주로 725, 보전빌딩 동관1층 (논현동)",
-        "phone": "02-517-9990",
-        "date": "2026-09-02",
-        "sido": "서울특별시",
-        "sigungu": "강남구",
-        "color": "#3498db"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          127.041258693516,
-          37.5166119773031
-        ]
-      },
-      "properties": {
-        "name": "이담정신건강의학과의원",
-        "category": "의원",
-        "address": "서울특별시 강남구 선릉로 669, 상경빌딩 10층 (논현동)",
-        "phone": "02-517-7710",
-        "date": "2026-09-02",
-        "sido": "서울특별시",
-        "sigungu": "강남구",
-        "color": "#3498db"
-      }
     }
   ]
 };
 const INLINE_KML = `<?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://www.opengis.net/kml/2.2">
   <Document>
-    <name>서울/경기 신규 허가 의료기관 (2026-09-09)</name>
+    <name>서울/경기 신규 허가 의료기관 (2026-09-10)</name>
     <description>의료기관 신규 허가 정보 (행정안전부 공공데이터)</description>
     <Style id="병원">
       <IconStyle>
@@ -778,6 +718,22 @@ const INLINE_KML = `<?xml version="1.0" encoding="UTF-8"?>
         <Icon><href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href></Icon>
       </IconStyle>
     </Style>
+    <Placemark>
+      <name>디케이플러스의원</name>
+      <description>[의원] 허가일: 2026-09-08 | 주소: 경기도 안산시 단원구 원포공원로 10, 104호 (초지동) | 전화: 031-402-6777</description>
+      <styleUrl>#의원</styleUrl>
+      <Point>
+        <coordinates>126.810994651595,37.3002423628799,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>센텀신경과의원</name>
+      <description>[의원] 허가일: 2026-09-08 | 주소: 서울특별시 관악구 시흥대로 554, 6층 (신림동) | 전화: 02-000-0000</description>
+      <styleUrl>#의원</styleUrl>
+      <Point>
+        <coordinates>126.901704114396,37.4822974416204,0</coordinates>
+      </Point>
+    </Placemark>
     <Placemark>
       <name>정왕365정형외과의원</name>
       <description>[의원] 허가일: 2026-09-07 | 주소: 경기도 시흥시 정왕대로 74, 트윈프라자 501-503호 (정왕동) | 전화: 031-509-8275</description>
@@ -904,46 +860,6 @@ const INLINE_KML = `<?xml version="1.0" encoding="UTF-8"?>
       <styleUrl>#약국</styleUrl>
       <Point>
         <coordinates>127.027958851763,37.5246795803043,0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <name>팀닥터정형외과의원</name>
-      <description>[의원] 허가일: 2026-09-02 | 주소: 경기도 고양시 덕양구 화신로260번길 58, 비전프라자 301,302,303,304호 (화정동) | 전화: 031-970-7588</description>
-      <styleUrl>#의원</styleUrl>
-      <Point>
-        <coordinates>126.833294029086,37.6333011345936,0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <name>365판교튼튼재활의학과의원</name>
-      <description>[의원] 허가일: 2026-09-02 | 주소: 경기도 성남시 분당구 운중로 128, 마크시티그린 2층 201.202.203호 (운중동) | 전화: 031-706-9111</description>
-      <styleUrl>#의원</styleUrl>
-      <Point>
-        <coordinates>127.077357791714,37.3913125957774,0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <name>강동속편한내과의원</name>
-      <description>[의원] 허가일: 2026-09-02 | 주소: 서울특별시 강동구 양재대로 1363, 3층 (성내동) | 전화: 02-2039-6060</description>
-      <styleUrl>#의원</styleUrl>
-      <Point>
-        <coordinates>127.135779712533,37.5278730429962,0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <name>포브의원</name>
-      <description>[의원] 허가일: 2026-09-02 | 주소: 서울특별시 강남구 언주로 725, 보전빌딩 동관1층 (논현동) | 전화: 02-517-9990</description>
-      <styleUrl>#의원</styleUrl>
-      <Point>
-        <coordinates>127.034451103421,37.5192980678283,0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <name>이담정신건강의학과의원</name>
-      <description>[의원] 허가일: 2026-09-02 | 주소: 서울특별시 강남구 선릉로 669, 상경빌딩 10층 (논현동) | 전화: 02-517-7710</description>
-      <styleUrl>#의원</styleUrl>
-      <Point>
-        <coordinates>127.041258693516,37.5166119773031,0</coordinates>
       </Point>
     </Placemark>
   </Document>
