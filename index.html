@@ -338,6 +338,46 @@ const INLINE_GEOJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
+          127.175614430713,
+          37.5723742168444
+        ]
+      },
+      "properties": {
+        "name": "강일드림약국",
+        "category": "약국",
+        "address": "서울특별시 강동구 아리수로93나길 66, 1층 103호 (강일동)",
+        "phone": "",
+        "date": "2026-09-11",
+        "sido": "서울특별시",
+        "sigungu": "강동구",
+        "color": "#2ecc71"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.023437392228,
+          37.603785604914
+        ]
+      },
+      "properties": {
+        "name": "길음튼튼약국",
+        "category": "약국",
+        "address": "서울특별시 성북구 길음로 11, 상가동 2층 208호 (길음동, 길음역롯데캐슬트윈골드아파트)",
+        "phone": "02-942-2589",
+        "date": "2026-09-11",
+        "sido": "서울특별시",
+        "sigungu": "성북구",
+        "color": "#2ecc71"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           127.039912145449,
           37.5239868789549
         ]
@@ -638,7 +678,7 @@ const INLINE_GEOJSON = {
 const INLINE_KML = `<?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://www.opengis.net/kml/2.2">
   <Document>
-    <name>서울/경기 신규 허가 의료기관 (2026-09-12)</name>
+    <name>서울/경기 신규 허가 의료기관 (2026-09-13)</name>
     <description>의료기관 신규 허가 정보 (행정안전부 공공데이터)</description>
     <Style id="병원">
       <IconStyle>
@@ -658,6 +698,22 @@ const INLINE_KML = `<?xml version="1.0" encoding="UTF-8"?>
         <Icon><href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href></Icon>
       </IconStyle>
     </Style>
+    <Placemark>
+      <name>강일드림약국</name>
+      <description>[약국] 허가일: 2026-09-11 | 주소: 서울특별시 강동구 아리수로93나길 66, 1층 103호 (강일동) | 전화: </description>
+      <styleUrl>#약국</styleUrl>
+      <Point>
+        <coordinates>127.175614430713,37.5723742168444,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>길음튼튼약국</name>
+      <description>[약국] 허가일: 2026-09-11 | 주소: 서울특별시 성북구 길음로 11, 상가동 2층 208호 (길음동, 길음역롯데캐슬트윈골드아파트) | 전화: 02-942-2589</description>
+      <styleUrl>#약국</styleUrl>
+      <Point>
+        <coordinates>127.023437392228,37.603785604914,0</coordinates>
+      </Point>
+    </Placemark>
     <Placemark>
       <name>더경의원</name>
       <description>[의원] 허가일: 2026-09-10 | 주소: 서울특별시 강남구 선릉로152길 6, BK청담빌딩 1층,2층,3층 (청담동) | 전화: 02-6959-8787</description>
