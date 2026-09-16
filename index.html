@@ -338,6 +338,46 @@ const INLINE_GEOJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
+          127.042759205652,
+          37.5232341761797
+        ]
+      },
+      "properties": {
+        "name": "미다스의원",
+        "category": "의원",
+        "address": "서울특별시 강남구 도산대로 428, 4층 (청담동)",
+        "phone": "02-000-0000",
+        "date": "2026-09-14",
+        "sido": "서울특별시",
+        "sigungu": "강남구",
+        "color": "#3498db"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.023414519648,
+          37.5057695805488
+        ]
+      },
+      "properties": {
+        "name": "라라온누리약국",
+        "category": "약국",
+        "address": "서울특별시 서초구 강남대로 487, 원빌딩 지하1층 (반포동)",
+        "phone": "02-518-1561",
+        "date": "2026-09-14",
+        "sido": "서울특별시",
+        "sigungu": "서초구",
+        "color": "#2ecc71"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           127.175614430713,
           37.5723742168444
         ]
@@ -370,6 +410,26 @@ const INLINE_GEOJSON = {
         "date": "2026-09-11",
         "sido": "서울특별시",
         "sigungu": "성북구",
+        "color": "#2ecc71"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.007358177138,
+          37.5668021171335
+        ]
+      },
+      "properties": {
+        "name": "메디메카 약국",
+        "category": "약국",
+        "address": "서울특별시 중구 장충단로 247, 굿모닝시티쇼핑몰 B1층 일부호 (을지로6가)",
+        "phone": "",
+        "date": "2026-09-11",
+        "sido": "서울특별시",
+        "sigungu": "중구",
         "color": "#2ecc71"
       }
     },
@@ -552,53 +612,13 @@ const INLINE_GEOJSON = {
         "sigungu": "성북구",
         "color": "#2ecc71"
       }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          126.810994651595,
-          37.3002423628799
-        ]
-      },
-      "properties": {
-        "name": "디케이플러스의원",
-        "category": "의원",
-        "address": "경기도 안산시 단원구 원포공원로 10, 104호 (초지동)",
-        "phone": "031-402-6777",
-        "date": "2026-09-08",
-        "sido": "경기도",
-        "sigungu": "안산시",
-        "color": "#3498db"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          126.901704114396,
-          37.4822974416204
-        ]
-      },
-      "properties": {
-        "name": "센텀신경과의원",
-        "category": "의원",
-        "address": "서울특별시 관악구 시흥대로 554, 6층 (신림동)",
-        "phone": "02-000-0000",
-        "date": "2026-09-08",
-        "sido": "서울특별시",
-        "sigungu": "관악구",
-        "color": "#3498db"
-      }
     }
   ]
 };
 const INLINE_KML = `<?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://www.opengis.net/kml/2.2">
   <Document>
-    <name>서울/경기 신규 허가 의료기관 (2026-09-15)</name>
+    <name>서울/경기 신규 허가 의료기관 (2026-09-16)</name>
     <description>의료기관 신규 허가 정보 (행정안전부 공공데이터)</description>
     <Style id="병원">
       <IconStyle>
@@ -619,6 +639,22 @@ const INLINE_KML = `<?xml version="1.0" encoding="UTF-8"?>
       </IconStyle>
     </Style>
     <Placemark>
+      <name>미다스의원</name>
+      <description>[의원] 허가일: 2026-09-14 | 주소: 서울특별시 강남구 도산대로 428, 4층 (청담동) | 전화: 02-000-0000</description>
+      <styleUrl>#의원</styleUrl>
+      <Point>
+        <coordinates>127.042759205652,37.5232341761797,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>라라온누리약국</name>
+      <description>[약국] 허가일: 2026-09-14 | 주소: 서울특별시 서초구 강남대로 487, 원빌딩 지하1층 (반포동) | 전화: 02-518-1561</description>
+      <styleUrl>#약국</styleUrl>
+      <Point>
+        <coordinates>127.023414519648,37.5057695805488,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
       <name>강일드림약국</name>
       <description>[약국] 허가일: 2026-09-11 | 주소: 서울특별시 강동구 아리수로93나길 66, 1층 103호 (강일동) | 전화: </description>
       <styleUrl>#약국</styleUrl>
@@ -632,6 +668,14 @@ const INLINE_KML = `<?xml version="1.0" encoding="UTF-8"?>
       <styleUrl>#약국</styleUrl>
       <Point>
         <coordinates>127.023437392228,37.603785604914,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>메디메카 약국</name>
+      <description>[약국] 허가일: 2026-09-11 | 주소: 서울특별시 중구 장충단로 247, 굿모닝시티쇼핑몰 B1층 일부호 (을지로6가) | 전화: </description>
+      <styleUrl>#약국</styleUrl>
+      <Point>
+        <coordinates>127.007358177138,37.5668021171335,0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
@@ -704,22 +748,6 @@ const INLINE_KML = `<?xml version="1.0" encoding="UTF-8"?>
       <styleUrl>#약국</styleUrl>
       <Point>
         <coordinates>127.04203446379,37.6032954435101,0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <name>디케이플러스의원</name>
-      <description>[의원] 허가일: 2026-09-08 | 주소: 경기도 안산시 단원구 원포공원로 10, 104호 (초지동) | 전화: 031-402-6777</description>
-      <styleUrl>#의원</styleUrl>
-      <Point>
-        <coordinates>126.810994651595,37.3002423628799,0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <name>센텀신경과의원</name>
-      <description>[의원] 허가일: 2026-09-08 | 주소: 서울특별시 관악구 시흥대로 554, 6층 (신림동) | 전화: 02-000-0000</description>
-      <styleUrl>#의원</styleUrl>
-      <Point>
-        <coordinates>126.901704114396,37.4822974416204,0</coordinates>
       </Point>
     </Placemark>
   </Document>
