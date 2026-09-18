@@ -338,6 +338,66 @@ const INLINE_GEOJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
+          126.735850386834,
+          37.7293806045757
+        ]
+      },
+      "properties": {
+        "name": "아르마의원",
+        "category": "의원",
+        "address": "경기도 파주시 청암로17번길 39, 501호 (목동동)",
+        "phone": "031-941-7628",
+        "date": "2026-09-16",
+        "sido": "경기도",
+        "sigungu": "파주시",
+        "color": "#3498db"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.151598440729,
+          37.2779959612183
+        ]
+      },
+      "properties": {
+        "name": "메가 팜프라자 약국",
+        "category": "약국",
+        "address": "경기도 용인시 기흥구 동백죽전대로 444, 쥬네브 3층 3022~3204 일부(36개호실)호 (중동)",
+        "phone": "031-679-0488",
+        "date": "2026-09-16",
+        "sido": "경기도",
+        "sigungu": "용인시",
+        "color": "#2ecc71"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.851473110255,
+          37.5214055375588
+        ]
+      },
+      "properties": {
+        "name": "다온약국",
+        "category": "약국",
+        "address": "서울특별시 양천구 신월로 274, 지하1층 102호 (신정동)",
+        "phone": "02-0000-0000",
+        "date": "2026-09-16",
+        "sido": "서울특별시",
+        "sigungu": "양천구",
+        "color": "#2ecc71"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           127.028830264591,
           37.4993816940953
         ]
@@ -371,6 +431,26 @@ const INLINE_GEOJSON = {
         "sido": "서울특별시",
         "sigungu": "강남구",
         "color": "#3498db"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.712516180176,
+          37.3653496024812
+        ]
+      },
+      "properties": {
+        "name": "미소약국",
+        "category": "약국",
+        "address": "경기도 시흥시 배곧1로 27-15, 제상가1동 1층 113호 (배곧동, 한라비발디캠퍼스)",
+        "phone": "",
+        "date": "2026-09-15",
+        "sido": "경기도",
+        "sigungu": "시흥시",
+        "color": "#2ecc71"
       }
     },
     {
@@ -512,73 +592,13 @@ const INLINE_GEOJSON = {
         "sigungu": "중구",
         "color": "#2ecc71"
       }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          127.039912145449,
-          37.5239868789549
-        ]
-      },
-      "properties": {
-        "name": "더경의원",
-        "category": "의원",
-        "address": "서울특별시 강남구 선릉로152길 6, BK청담빌딩 1층,2층,3층 (청담동)",
-        "phone": "02-6959-8787",
-        "date": "2026-09-10",
-        "sido": "서울특별시",
-        "sigungu": "강남구",
-        "color": "#3498db"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          126.923715031669,
-          37.5549107642719
-        ]
-      },
-      "properties": {
-        "name": "팜픽약국",
-        "category": "약국",
-        "address": "서울특별시 마포구 와우산로23길 48, 1층 (서교동)",
-        "phone": "070-7678-9742",
-        "date": "2026-09-10",
-        "sido": "서울특별시",
-        "sigungu": "마포구",
-        "color": "#2ecc71"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          126.961104138121,
-          37.5711028779759
-        ]
-      },
-      "properties": {
-        "name": "스마일약국",
-        "category": "약국",
-        "address": "서울특별시 서대문구 통일로 201, 1층 (영천동)",
-        "phone": "02-313-0222",
-        "date": "2026-09-10",
-        "sido": "서울특별시",
-        "sigungu": "서대문구",
-        "color": "#2ecc71"
-      }
     }
   ]
 };
 const INLINE_KML = `<?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://www.opengis.net/kml/2.2">
   <Document>
-    <name>서울/경기 신규 허가 의료기관 (2026-09-17)</name>
+    <name>서울/경기 신규 허가 의료기관 (2026-09-18)</name>
     <description>의료기관 신규 허가 정보 (행정안전부 공공데이터)</description>
     <Style id="병원">
       <IconStyle>
@@ -599,6 +619,30 @@ const INLINE_KML = `<?xml version="1.0" encoding="UTF-8"?>
       </IconStyle>
     </Style>
     <Placemark>
+      <name>아르마의원</name>
+      <description>[의원] 허가일: 2026-09-16 | 주소: 경기도 파주시 청암로17번길 39, 501호 (목동동) | 전화: 031-941-7628</description>
+      <styleUrl>#의원</styleUrl>
+      <Point>
+        <coordinates>126.735850386834,37.7293806045757,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>메가 팜프라자 약국</name>
+      <description>[약국] 허가일: 2026-09-16 | 주소: 경기도 용인시 기흥구 동백죽전대로 444, 쥬네브 3층 3022~3204 일부(36개호실)호 (중동) | 전화: 031-679-0488</description>
+      <styleUrl>#약국</styleUrl>
+      <Point>
+        <coordinates>127.151598440729,37.2779959612183,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>다온약국</name>
+      <description>[약국] 허가일: 2026-09-16 | 주소: 서울특별시 양천구 신월로 274, 지하1층 102호 (신정동) | 전화: 02-0000-0000</description>
+      <styleUrl>#약국</styleUrl>
+      <Point>
+        <coordinates>126.851473110255,37.5214055375588,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
       <name>웨이비의원</name>
       <description>[의원] 허가일: 2026-09-15 | 주소: 서울특별시 강남구 강남대로94길 18, 9층, 지하1층 (역삼동) | 전화: 02-6404-8880</description>
       <styleUrl>#의원</styleUrl>
@@ -612,6 +656,14 @@ const INLINE_KML = `<?xml version="1.0" encoding="UTF-8"?>
       <styleUrl>#의원</styleUrl>
       <Point>
         <coordinates>127.021560267907,37.517549573998,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>미소약국</name>
+      <description>[약국] 허가일: 2026-09-15 | 주소: 경기도 시흥시 배곧1로 27-15, 제상가1동 1층 113호 (배곧동, 한라비발디캠퍼스) | 전화: </description>
+      <styleUrl>#약국</styleUrl>
+      <Point>
+        <coordinates>126.712516180176,37.3653496024812,0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
@@ -668,30 +720,6 @@ const INLINE_KML = `<?xml version="1.0" encoding="UTF-8"?>
       <styleUrl>#약국</styleUrl>
       <Point>
         <coordinates>127.007358177138,37.5668021171335,0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <name>더경의원</name>
-      <description>[의원] 허가일: 2026-09-10 | 주소: 서울특별시 강남구 선릉로152길 6, BK청담빌딩 1층,2층,3층 (청담동) | 전화: 02-6959-8787</description>
-      <styleUrl>#의원</styleUrl>
-      <Point>
-        <coordinates>127.039912145449,37.5239868789549,0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <name>팜픽약국</name>
-      <description>[약국] 허가일: 2026-09-10 | 주소: 서울특별시 마포구 와우산로23길 48, 1층 (서교동) | 전화: 070-7678-9742</description>
-      <styleUrl>#약국</styleUrl>
-      <Point>
-        <coordinates>126.923715031669,37.5549107642719,0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <name>스마일약국</name>
-      <description>[약국] 허가일: 2026-09-10 | 주소: 서울특별시 서대문구 통일로 201, 1층 (영천동) | 전화: 02-313-0222</description>
-      <styleUrl>#약국</styleUrl>
-      <Point>
-        <coordinates>126.961104138121,37.5711028779759,0</coordinates>
       </Point>
     </Placemark>
   </Document>
