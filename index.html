@@ -338,6 +338,46 @@ const INLINE_GEOJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
+          127.044641992447,
+          37.5265503391107
+        ]
+      },
+      "properties": {
+        "name": "누안의원",
+        "category": "의원",
+        "address": "서울특별시 강남구 압구정로 436, 베띠앙뜨사옥 7층 (청담동)",
+        "phone": "02-515-4367",
+        "date": "2026-09-29",
+        "sido": "서울특별시",
+        "sigungu": "강남구",
+        "color": "#3498db"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.734133145912,
+          37.7285952440312
+        ]
+      },
+      "properties": {
+        "name": "메가타운약국 파주점",
+        "category": "약국",
+        "address": "경기도 파주시 청암로17번길 59, 골든에셋타워 110, 111호 (목동동)",
+        "phone": "070-7755-8627",
+        "date": "2026-09-29",
+        "sido": "경기도",
+        "sigungu": "파주시",
+        "color": "#2ecc71"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           126.931297427833,
           37.3597505310826
         ]
@@ -412,113 +452,13 @@ const INLINE_GEOJSON = {
         "sigungu": "강남구",
         "color": "#3498db"
       }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          127.073445707754,
-          37.2527867453235
-        ]
-      },
-      "properties": {
-        "name": "영통연세튼튼의원",
-        "category": "의원",
-        "address": "경기도 수원시 영통구 봉영로 1590, 밀레니엄 프라자 101호 (영통동)",
-        "phone": "031-205-7500",
-        "date": "2026-09-23",
-        "sido": "경기도",
-        "sigungu": "수원시",
-        "color": "#3498db"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          127.029067230812,
-          37.4962895621722
-        ]
-      },
-      "properties": {
-        "name": "강남케이안과의원",
-        "category": "의원",
-        "address": "서울특별시 강남구 강남대로 374, 13층 (역삼동)",
-        "phone": "02-567-7757",
-        "date": "2026-09-23",
-        "sido": "서울특별시",
-        "sigungu": "강남구",
-        "color": "#3498db"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          127.010277326166,
-          37.3758168645238
-        ]
-      },
-      "properties": {
-        "name": "소풍약국",
-        "category": "약국",
-        "address": "경기도 의왕시 바라산로 1, 롯데프리미엄아울렛의왕점 1층 테이스티그라운드 소풍약국호 (학의동)",
-        "phone": "",
-        "date": "2026-09-23",
-        "sido": "경기도",
-        "sigungu": "의왕시",
-        "color": "#2ecc71"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          127.015588242857,
-          37.2849835152421
-        ]
-      },
-      "properties": {
-        "name": "평온약국",
-        "category": "약국",
-        "address": "경기도 수원시 팔달구 정조로 863 (신풍동)",
-        "phone": "",
-        "date": "2026-09-23",
-        "sido": "경기도",
-        "sigungu": "수원시",
-        "color": "#2ecc71"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          126.972105810775,
-          37.5770321930697
-        ]
-      },
-      "properties": {
-        "name": "경복궁약국",
-        "category": "약국",
-        "address": "서울특별시 종로구 자하문로 11, 1층 좌측호 (체부동)",
-        "phone": "",
-        "date": "2026-09-23",
-        "sido": "서울특별시",
-        "sigungu": "종로구",
-        "color": "#2ecc71"
-      }
     }
   ]
 };
 const INLINE_KML = `<?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://www.opengis.net/kml/2.2">
   <Document>
-    <name>서울/경기 신규 허가 의료기관 (2026-09-30)</name>
+    <name>서울/경기 신규 허가 의료기관 (2026-10-01)</name>
     <description>의료기관 신규 허가 정보 (행정안전부 공공데이터)</description>
     <Style id="병원">
       <IconStyle>
@@ -538,6 +478,22 @@ const INLINE_KML = `<?xml version="1.0" encoding="UTF-8"?>
         <Icon><href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href></Icon>
       </IconStyle>
     </Style>
+    <Placemark>
+      <name>누안의원</name>
+      <description>[의원] 허가일: 2026-09-29 | 주소: 서울특별시 강남구 압구정로 436, 베띠앙뜨사옥 7층 (청담동) | 전화: 02-515-4367</description>
+      <styleUrl>#의원</styleUrl>
+      <Point>
+        <coordinates>127.044641992447,37.5265503391107,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>메가타운약국 파주점</name>
+      <description>[약국] 허가일: 2026-09-29 | 주소: 경기도 파주시 청암로17번길 59, 골든에셋타워 110, 111호 (목동동) | 전화: 070-7755-8627</description>
+      <styleUrl>#약국</styleUrl>
+      <Point>
+        <coordinates>126.734133145912,37.7285952440312,0</coordinates>
+      </Point>
+    </Placemark>
     <Placemark>
       <name>서울아산이비인후과의원</name>
       <description>[의원] 허가일: 2026-09-28 | 주소: 경기도 군포시 산본로323번길 16-25, 삼일빌딩 501일부호 (산본동) | 전화: 031-391-7575</description>
@@ -568,46 +524,6 @@ const INLINE_KML = `<?xml version="1.0" encoding="UTF-8"?>
       <styleUrl>#의원</styleUrl>
       <Point>
         <coordinates>127.04092043531,37.5237788528603,0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <name>영통연세튼튼의원</name>
-      <description>[의원] 허가일: 2026-09-23 | 주소: 경기도 수원시 영통구 봉영로 1590, 밀레니엄 프라자 101호 (영통동) | 전화: 031-205-7500</description>
-      <styleUrl>#의원</styleUrl>
-      <Point>
-        <coordinates>127.073445707754,37.2527867453235,0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <name>강남케이안과의원</name>
-      <description>[의원] 허가일: 2026-09-23 | 주소: 서울특별시 강남구 강남대로 374, 13층 (역삼동) | 전화: 02-567-7757</description>
-      <styleUrl>#의원</styleUrl>
-      <Point>
-        <coordinates>127.029067230812,37.4962895621722,0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <name>소풍약국</name>
-      <description>[약국] 허가일: 2026-09-23 | 주소: 경기도 의왕시 바라산로 1, 롯데프리미엄아울렛의왕점 1층 테이스티그라운드 소풍약국호 (학의동) | 전화: </description>
-      <styleUrl>#약국</styleUrl>
-      <Point>
-        <coordinates>127.010277326166,37.3758168645238,0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <name>평온약국</name>
-      <description>[약국] 허가일: 2026-09-23 | 주소: 경기도 수원시 팔달구 정조로 863 (신풍동) | 전화: </description>
-      <styleUrl>#약국</styleUrl>
-      <Point>
-        <coordinates>127.015588242857,37.2849835152421,0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <name>경복궁약국</name>
-      <description>[약국] 허가일: 2026-09-23 | 주소: 서울특별시 종로구 자하문로 11, 1층 좌측호 (체부동) | 전화: </description>
-      <styleUrl>#약국</styleUrl>
-      <Point>
-        <coordinates>126.972105810775,37.5770321930697,0</coordinates>
       </Point>
     </Placemark>
   </Document>
