@@ -338,6 +338,26 @@ const INLINE_GEOJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
+          127.027272965464,
+          37.4995058621367
+        ]
+      },
+      "properties": {
+        "name": "순비의원",
+        "category": "의원",
+        "address": "서울특별시 강남구 강남대로 412, 규정빌딩 3층 (역삼동)",
+        "phone": "02-565-0411",
+        "date": "2026-10-07",
+        "sido": "서울특별시",
+        "sigungu": "강남구",
+        "color": "#3498db"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           127.028532751479,
           37.5226190305808
         ]
@@ -552,73 +572,13 @@ const INLINE_GEOJSON = {
         "sigungu": "강서구",
         "color": "#2ecc71"
       }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          127.040719982429,
-          37.5229563969649
-        ]
-      },
-      "properties": {
-        "name": "청담리오베의원",
-        "category": "의원",
-        "address": "서울특별시 강남구 도산대로 412, 남강빌딩 지하1층~2층 (청담동)",
-        "phone": "02-517-7882",
-        "date": "2026-10-02",
-        "sido": "서울특별시",
-        "sigungu": "강남구",
-        "color": "#3498db"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          126.731343895191,
-          37.6114962536188
-        ]
-      },
-      "properties": {
-        "name": "라온다함약국",
-        "category": "약국",
-        "address": "경기도 김포시 유현로238번길 8, 풍무역플라자 106호 (풍무동)",
-        "phone": "070-7819-8882",
-        "date": "2026-10-02",
-        "sido": "경기도",
-        "sigungu": "김포시",
-        "color": "#2ecc71"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          126.815222128309,
-          37.3077541178224
-        ]
-      },
-      "properties": {
-        "name": "더블유(W)이레 약국",
-        "category": "약국",
-        "address": "경기도 안산시 단원구 초지로 100, 세종프라자 1층 126,127호 (초지동)",
-        "phone": "",
-        "date": "2026-10-02",
-        "sido": "경기도",
-        "sigungu": "안산시",
-        "color": "#2ecc71"
-      }
     }
   ]
 };
 const INLINE_KML = `<?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://www.opengis.net/kml/2.2">
   <Document>
-    <name>서울/경기 신규 허가 의료기관 (2026-10-09)</name>
+    <name>서울/경기 신규 허가 의료기관 (2026-10-10)</name>
     <description>의료기관 신규 허가 정보 (행정안전부 공공데이터)</description>
     <Style id="병원">
       <IconStyle>
@@ -638,6 +598,14 @@ const INLINE_KML = `<?xml version="1.0" encoding="UTF-8"?>
         <Icon><href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href></Icon>
       </IconStyle>
     </Style>
+    <Placemark>
+      <name>순비의원</name>
+      <description>[의원] 허가일: 2026-10-07 | 주소: 서울특별시 강남구 강남대로 412, 규정빌딩 3층 (역삼동) | 전화: 02-565-0411</description>
+      <styleUrl>#의원</styleUrl>
+      <Point>
+        <coordinates>127.027272965464,37.4995058621367,0</coordinates>
+      </Point>
+    </Placemark>
     <Placemark>
       <name>네오미오의원</name>
       <description>[의원] 허가일: 2026-10-07 | 주소: 서울특별시 강남구 논현로 830, 3층 (신사동) | 전화: 02-6952-4575</description>
@@ -724,30 +692,6 @@ const INLINE_KML = `<?xml version="1.0" encoding="UTF-8"?>
       <styleUrl>#약국</styleUrl>
       <Point>
         <coordinates>126.803085626211,37.558958766307,0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <name>청담리오베의원</name>
-      <description>[의원] 허가일: 2026-10-02 | 주소: 서울특별시 강남구 도산대로 412, 남강빌딩 지하1층~2층 (청담동) | 전화: 02-517-7882</description>
-      <styleUrl>#의원</styleUrl>
-      <Point>
-        <coordinates>127.040719982429,37.5229563969649,0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <name>라온다함약국</name>
-      <description>[약국] 허가일: 2026-10-02 | 주소: 경기도 김포시 유현로238번길 8, 풍무역플라자 106호 (풍무동) | 전화: 070-7819-8882</description>
-      <styleUrl>#약국</styleUrl>
-      <Point>
-        <coordinates>126.731343895191,37.6114962536188,0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <name>더블유(W)이레 약국</name>
-      <description>[약국] 허가일: 2026-10-02 | 주소: 경기도 안산시 단원구 초지로 100, 세종프라자 1층 126,127호 (초지동) | 전화: </description>
-      <styleUrl>#약국</styleUrl>
-      <Point>
-        <coordinates>126.815222128309,37.3077541178224,0</coordinates>
       </Point>
     </Placemark>
   </Document>
