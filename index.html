@@ -338,6 +338,106 @@ const INLINE_GEOJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
+          127.026692446306,
+          37.4987750083767
+        ]
+      },
+      "properties": {
+        "name": "제너리스의원",
+        "category": "의원",
+        "address": "서울특별시 서초구 강남대로 405, 통영빌딩 8층 801호 (서초동)",
+        "phone": "02-3478-8988",
+        "date": "2026-10-14",
+        "sido": "서울특별시",
+        "sigungu": "서초구",
+        "color": "#3498db"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.127182324826,
+          37.479365117329
+        ]
+      },
+      "properties": {
+        "name": "나은약국",
+        "category": "약국",
+        "address": "서울특별시 송파구 충민로 90, 111호 (장지동, 송파 해링턴 타워)",
+        "phone": "02-409-0825",
+        "date": "2026-10-14",
+        "sido": "서울특별시",
+        "sigungu": "송파구",
+        "color": "#2ecc71"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.875984665042,
+          37.5292109947037
+        ]
+      },
+      "properties": {
+        "name": "탄탄약국",
+        "category": "약국",
+        "address": "서울특별시 양천구 목동동로 309, 행복한백화점((주)한국중소벤처기업유통원) 5층 (목동)",
+        "phone": "02-2649-8870",
+        "date": "2026-10-14",
+        "sido": "서울특별시",
+        "sigungu": "양천구",
+        "color": "#2ecc71"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.452118849822,
+          37.2751532191548
+        ]
+      },
+      "properties": {
+        "name": "뷰티온의원",
+        "category": "의원",
+        "address": "경기도 이천시 애련정로49번길 36, 2층 (안흥동, 이천 롯데캐슬 페라즈 스카이)",
+        "phone": "031-8011-9918",
+        "date": "2026-10-13",
+        "sido": "경기도",
+        "sigungu": "이천시",
+        "color": "#3498db"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.079402214942,
+          37.3143790047845
+        ]
+      },
+      "properties": {
+        "name": "마음산부인과의원",
+        "category": "의원",
+        "address": "경기도 용인시 수지구 성복2로 58, 영진빌딩 3층 (성복동)",
+        "phone": "031-264-0601",
+        "date": "2026-10-13",
+        "sido": "경기도",
+        "sigungu": "용인시",
+        "color": "#3498db"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           127.041117630865,
           37.523811310561
         ]
@@ -538,7 +638,7 @@ const INLINE_GEOJSON = {
 const INLINE_KML = `<?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://www.opengis.net/kml/2.2">
   <Document>
-    <name>서울/경기 신규 허가 의료기관 (2026-10-15)</name>
+    <name>서울/경기 신규 허가 의료기관 (2026-10-16)</name>
     <description>의료기관 신규 허가 정보 (행정안전부 공공데이터)</description>
     <Style id="병원">
       <IconStyle>
@@ -558,6 +658,46 @@ const INLINE_KML = `<?xml version="1.0" encoding="UTF-8"?>
         <Icon><href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href></Icon>
       </IconStyle>
     </Style>
+    <Placemark>
+      <name>제너리스의원</name>
+      <description>[의원] 허가일: 2026-10-14 | 주소: 서울특별시 서초구 강남대로 405, 통영빌딩 8층 801호 (서초동) | 전화: 02-3478-8988</description>
+      <styleUrl>#의원</styleUrl>
+      <Point>
+        <coordinates>127.026692446306,37.4987750083767,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>나은약국</name>
+      <description>[약국] 허가일: 2026-10-14 | 주소: 서울특별시 송파구 충민로 90, 111호 (장지동, 송파 해링턴 타워) | 전화: 02-409-0825</description>
+      <styleUrl>#약국</styleUrl>
+      <Point>
+        <coordinates>127.127182324826,37.479365117329,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>탄탄약국</name>
+      <description>[약국] 허가일: 2026-10-14 | 주소: 서울특별시 양천구 목동동로 309, 행복한백화점((주)한국중소벤처기업유통원) 5층 (목동) | 전화: 02-2649-8870</description>
+      <styleUrl>#약국</styleUrl>
+      <Point>
+        <coordinates>126.875984665042,37.5292109947037,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>뷰티온의원</name>
+      <description>[의원] 허가일: 2026-10-13 | 주소: 경기도 이천시 애련정로49번길 36, 2층 (안흥동, 이천 롯데캐슬 페라즈 스카이) | 전화: 031-8011-9918</description>
+      <styleUrl>#의원</styleUrl>
+      <Point>
+        <coordinates>127.452118849822,37.2751532191548,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>마음산부인과의원</name>
+      <description>[의원] 허가일: 2026-10-13 | 주소: 경기도 용인시 수지구 성복2로 58, 영진빌딩 3층 (성복동) | 전화: 031-264-0601</description>
+      <styleUrl>#의원</styleUrl>
+      <Point>
+        <coordinates>127.079402214942,37.3143790047845,0</coordinates>
+      </Point>
+    </Placemark>
     <Placemark>
       <name>뉴셀성형외과의원</name>
       <description>[의원] 허가일: 2026-10-13 | 주소: 서울특별시 강남구 도산대로 417, FIRST LIGHT 타워 4층 (청담동) | 전화: 02-0000-0000</description>
