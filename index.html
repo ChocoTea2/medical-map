@@ -338,6 +338,66 @@ const INLINE_GEOJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
+          127.127182324826,
+          37.479365117329
+        ]
+      },
+      "properties": {
+        "name": "삼성에스정형외과의원",
+        "category": "의원",
+        "address": "서울특별시 송파구 충민로 90, 201호 (장지동, 송파 해링턴 타워)",
+        "phone": "02-400-2777",
+        "date": "2026-10-16",
+        "sido": "서울특별시",
+        "sigungu": "송파구",
+        "color": "#3498db"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.908352997165,
+          37.4515596641469
+        ]
+      },
+      "properties": {
+        "name": "다정약국",
+        "category": "약국",
+        "address": "서울특별시 금천구 금하로 705, 2층 4호 (시흥동)",
+        "phone": "02-000-0000",
+        "date": "2026-10-16",
+        "sido": "서울특별시",
+        "sigungu": "금천구",
+        "color": "#2ecc71"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.925273328786,
+          37.5560194470351
+        ]
+      },
+      "properties": {
+        "name": "연두약국",
+        "category": "약국",
+        "address": "서울특별시 마포구 어울마당로 136-3, 1층 일부호 (서교동)",
+        "phone": "02-336-9014",
+        "date": "2026-10-16",
+        "sido": "서울특별시",
+        "sigungu": "마포구",
+        "color": "#2ecc71"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           127.171761963136,
           37.5507923893164
         ]
@@ -758,7 +818,7 @@ const INLINE_GEOJSON = {
 const INLINE_KML = `<?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://www.opengis.net/kml/2.2">
   <Document>
-    <name>서울/경기 신규 허가 의료기관 (2026-10-17)</name>
+    <name>서울/경기 신규 허가 의료기관 (2026-10-18)</name>
     <description>의료기관 신규 허가 정보 (행정안전부 공공데이터)</description>
     <Style id="병원">
       <IconStyle>
@@ -778,6 +838,30 @@ const INLINE_KML = `<?xml version="1.0" encoding="UTF-8"?>
         <Icon><href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href></Icon>
       </IconStyle>
     </Style>
+    <Placemark>
+      <name>삼성에스정형외과의원</name>
+      <description>[의원] 허가일: 2026-10-16 | 주소: 서울특별시 송파구 충민로 90, 201호 (장지동, 송파 해링턴 타워) | 전화: 02-400-2777</description>
+      <styleUrl>#의원</styleUrl>
+      <Point>
+        <coordinates>127.127182324826,37.479365117329,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>다정약국</name>
+      <description>[약국] 허가일: 2026-10-16 | 주소: 서울특별시 금천구 금하로 705, 2층 4호 (시흥동) | 전화: 02-000-0000</description>
+      <styleUrl>#약국</styleUrl>
+      <Point>
+        <coordinates>126.908352997165,37.4515596641469,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>연두약국</name>
+      <description>[약국] 허가일: 2026-10-16 | 주소: 서울특별시 마포구 어울마당로 136-3, 1층 일부호 (서교동) | 전화: 02-336-9014</description>
+      <styleUrl>#약국</styleUrl>
+      <Point>
+        <coordinates>126.925273328786,37.5560194470351,0</coordinates>
+      </Point>
+    </Placemark>
     <Placemark>
       <name>고덕성모엘이비인후과의원</name>
       <description>[의원] 허가일: 2026-10-15 | 주소: 서울특별시 강동구 구천면로 664, 5층 (상일동) | 전화: 02-6952-9141</description>
