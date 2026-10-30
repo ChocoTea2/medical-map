@@ -338,6 +338,46 @@ const INLINE_GEOJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
+          127.120132764747,
+          37.4948121610825
+        ]
+      },
+      "properties": {
+        "name": "성원사랑약국",
+        "category": "약국",
+        "address": "서울특별시 송파구 송파대로28길 27, 102동 201호 (가락동, 송파 성원상떼빌)",
+        "phone": "02-406-3555",
+        "date": "2026-10-28",
+        "sido": "서울특별시",
+        "sigungu": "송파구",
+        "color": "#2ecc71"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.919665809662,
+          37.5275117444834
+        ]
+      },
+      "properties": {
+        "name": "온마음약국",
+        "category": "약국",
+        "address": "서울특별시 영등포구 은행로 3, 익스콘벤처타워 2층 206-1호 (여의도동)",
+        "phone": "",
+        "date": "2026-10-28",
+        "sido": "서울특별시",
+        "sigungu": "영등포구",
+        "color": "#2ecc71"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           126.930049536311,
           37.3647541937521
         ]
@@ -532,93 +572,13 @@ const INLINE_GEOJSON = {
         "sigungu": "강동구",
         "color": "#2ecc71"
       }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          127.094478868679,
-          37.7452180712739
-        ]
-      },
-      "properties": {
-        "name": "365연세마디튼튼의원",
-        "category": "의원",
-        "address": "경기도 의정부시 천보로 64, 1층 102~106호 (민락동)",
-        "phone": "031-851-7580",
-        "date": "2026-10-22",
-        "sido": "경기도",
-        "sigungu": "의정부시",
-        "color": "#3498db"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          127.028798878563,
-          37.4965739855907
-        ]
-      },
-      "properties": {
-        "name": "노바성형외과의원",
-        "category": "의원",
-        "address": "서울특별시 강남구 강남대로 376, 6층 (역삼동)",
-        "phone": "02-555-7896",
-        "date": "2026-10-22",
-        "sido": "서울특별시",
-        "sigungu": "강남구",
-        "color": "#3498db"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          127.02752693171,
-          37.5031171249719
-        ]
-      },
-      "properties": {
-        "name": "세라미크의원",
-        "category": "의원",
-        "address": "서울특별시 강남구 봉은사로6길 29, 지하1층 (역삼동)",
-        "phone": "02-6205-3450",
-        "date": "2026-10-22",
-        "sido": "서울특별시",
-        "sigungu": "강남구",
-        "color": "#3498db"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          126.765549076623,
-          37.6985635145363
-        ]
-      },
-      "properties": {
-        "name": "365킹약국",
-        "category": "약국",
-        "address": "경기도 고양시 일산서구 일현로 131, YJ타워 1층 107호~109호 (탄현동)",
-        "phone": "031-994-7746",
-        "date": "2026-10-22",
-        "sido": "경기도",
-        "sigungu": "고양시",
-        "color": "#2ecc71"
-      }
     }
   ]
 };
 const INLINE_KML = `<?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://www.opengis.net/kml/2.2">
   <Document>
-    <name>서울/경기 신규 허가 의료기관 (2026-10-29)</name>
+    <name>서울/경기 신규 허가 의료기관 (2026-10-30)</name>
     <description>의료기관 신규 허가 정보 (행정안전부 공공데이터)</description>
     <Style id="병원">
       <IconStyle>
@@ -638,6 +598,22 @@ const INLINE_KML = `<?xml version="1.0" encoding="UTF-8"?>
         <Icon><href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href></Icon>
       </IconStyle>
     </Style>
+    <Placemark>
+      <name>성원사랑약국</name>
+      <description>[약국] 허가일: 2026-10-28 | 주소: 서울특별시 송파구 송파대로28길 27, 102동 201호 (가락동, 송파 성원상떼빌) | 전화: 02-406-3555</description>
+      <styleUrl>#약국</styleUrl>
+      <Point>
+        <coordinates>127.120132764747,37.4948121610825,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>온마음약국</name>
+      <description>[약국] 허가일: 2026-10-28 | 주소: 서울특별시 영등포구 은행로 3, 익스콘벤처타워 2층 206-1호 (여의도동) | 전화: </description>
+      <styleUrl>#약국</styleUrl>
+      <Point>
+        <coordinates>126.919665809662,37.5275117444834,0</coordinates>
+      </Point>
+    </Placemark>
     <Placemark>
       <name>365연세만세마취통증의학과의원</name>
       <description>[의원] 허가일: 2026-10-27 | 주소: 경기도 군포시 산본로 390, 대림타운 202,301일부호 (산본동) | 전화: 031-394-0222</description>
@@ -716,38 +692,6 @@ const INLINE_KML = `<?xml version="1.0" encoding="UTF-8"?>
       <styleUrl>#약국</styleUrl>
       <Point>
         <coordinates>127.169771231948,37.5574665191202,0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <name>365연세마디튼튼의원</name>
-      <description>[의원] 허가일: 2026-10-22 | 주소: 경기도 의정부시 천보로 64, 1층 102~106호 (민락동) | 전화: 031-851-7580</description>
-      <styleUrl>#의원</styleUrl>
-      <Point>
-        <coordinates>127.094478868679,37.7452180712739,0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <name>노바성형외과의원</name>
-      <description>[의원] 허가일: 2026-10-22 | 주소: 서울특별시 강남구 강남대로 376, 6층 (역삼동) | 전화: 02-555-7896</description>
-      <styleUrl>#의원</styleUrl>
-      <Point>
-        <coordinates>127.028798878563,37.4965739855907,0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <name>세라미크의원</name>
-      <description>[의원] 허가일: 2026-10-22 | 주소: 서울특별시 강남구 봉은사로6길 29, 지하1층 (역삼동) | 전화: 02-6205-3450</description>
-      <styleUrl>#의원</styleUrl>
-      <Point>
-        <coordinates>127.02752693171,37.5031171249719,0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <name>365킹약국</name>
-      <description>[약국] 허가일: 2026-10-22 | 주소: 경기도 고양시 일산서구 일현로 131, YJ타워 1층 107호~109호 (탄현동) | 전화: 031-994-7746</description>
-      <styleUrl>#약국</styleUrl>
-      <Point>
-        <coordinates>126.765549076623,37.6985635145363,0</coordinates>
       </Point>
     </Placemark>
   </Document>
