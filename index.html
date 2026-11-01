@@ -338,6 +338,46 @@ const INLINE_GEOJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
+          127.028755869816,
+          37.6204657886777
+        ]
+      },
+      "properties": {
+        "name": "모범약국",
+        "category": "약국",
+        "address": "서울특별시 강북구 도봉로 128 (미아동)",
+        "phone": "02-990-9983",
+        "date": "2026-10-30",
+        "sido": "서울특별시",
+        "sigungu": "강북구",
+        "color": "#2ecc71"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.031412504218,
+          37.5157810373399
+        ]
+      },
+      "properties": {
+        "name": "므두셀라의원",
+        "category": "의원",
+        "address": "서울특별시 강남구 논현로134길 15, 4층 (논현동)",
+        "phone": "",
+        "date": "2026-10-29",
+        "sido": "서울특별시",
+        "sigungu": "강남구",
+        "color": "#3498db"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           127.020655869811,
           37.5161918332017
         ]
@@ -498,6 +538,26 @@ const INLINE_GEOJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
+          126.780980857387,
+          37.6818587413302
+        ]
+      },
+      "properties": {
+        "name": "새시민약국",
+        "category": "약국",
+        "address": "경기도 고양시 일산동구 고양대로 762, 지하1층 B104호 (중산동)",
+        "phone": "031-000-0000",
+        "date": "2026-10-28",
+        "sido": "경기도",
+        "sigungu": "고양시",
+        "color": "#2ecc71"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           127.120132764747,
           37.4948121610825
         ]
@@ -638,6 +698,26 @@ const INLINE_GEOJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
+          126.896538036905,
+          37.4849270383011
+        ]
+      },
+      "properties": {
+        "name": "해든내과의원",
+        "category": "의원",
+        "address": "서울특별시 구로구 디지털로 300, 지밸리비즈플라자 2층 201호 (구로동)",
+        "phone": "02-6952-7937",
+        "date": "2026-10-26",
+        "sido": "서울특별시",
+        "sigungu": "구로구",
+        "color": "#3498db"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           127.306335449571,
           37.653316907708
         ]
@@ -678,7 +758,7 @@ const INLINE_GEOJSON = {
 const INLINE_KML = `<?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://www.opengis.net/kml/2.2">
   <Document>
-    <name>서울/경기 신규 허가 의료기관 (2026-10-31)</name>
+    <name>서울/경기 신규 허가 의료기관 (2026-11-01)</name>
     <description>의료기관 신규 허가 정보 (행정안전부 공공데이터)</description>
     <Style id="병원">
       <IconStyle>
@@ -698,6 +778,22 @@ const INLINE_KML = `<?xml version="1.0" encoding="UTF-8"?>
         <Icon><href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href></Icon>
       </IconStyle>
     </Style>
+    <Placemark>
+      <name>모범약국</name>
+      <description>[약국] 허가일: 2026-10-30 | 주소: 서울특별시 강북구 도봉로 128 (미아동) | 전화: 02-990-9983</description>
+      <styleUrl>#약국</styleUrl>
+      <Point>
+        <coordinates>127.028755869816,37.6204657886777,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>므두셀라의원</name>
+      <description>[의원] 허가일: 2026-10-29 | 주소: 서울특별시 강남구 논현로134길 15, 4층 (논현동) | 전화: </description>
+      <styleUrl>#의원</styleUrl>
+      <Point>
+        <coordinates>127.031412504218,37.5157810373399,0</coordinates>
+      </Point>
+    </Placemark>
     <Placemark>
       <name>디아크피부과의원</name>
       <description>[의원] 허가일: 2026-10-29 | 주소: 서울특별시 강남구 도산대로 108, 8층 (논현동) | 전화: 02-548-1110</description>
@@ -763,6 +859,14 @@ const INLINE_KML = `<?xml version="1.0" encoding="UTF-8"?>
       </Point>
     </Placemark>
     <Placemark>
+      <name>새시민약국</name>
+      <description>[약국] 허가일: 2026-10-28 | 주소: 경기도 고양시 일산동구 고양대로 762, 지하1층 B104호 (중산동) | 전화: 031-000-0000</description>
+      <styleUrl>#약국</styleUrl>
+      <Point>
+        <coordinates>126.780980857387,37.6818587413302,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
       <name>성원사랑약국</name>
       <description>[약국] 허가일: 2026-10-28 | 주소: 서울특별시 송파구 송파대로28길 27, 102동 201호 (가락동, 송파 성원상떼빌) | 전화: 02-406-3555</description>
       <styleUrl>#약국</styleUrl>
@@ -816,6 +920,14 @@ const INLINE_KML = `<?xml version="1.0" encoding="UTF-8"?>
       <styleUrl>#의원</styleUrl>
       <Point>
         <coordinates>127.042759205652,37.5232341761797,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>해든내과의원</name>
+      <description>[의원] 허가일: 2026-10-26 | 주소: 서울특별시 구로구 디지털로 300, 지밸리비즈플라자 2층 201호 (구로동) | 전화: 02-6952-7937</description>
+      <styleUrl>#의원</styleUrl>
+      <Point>
+        <coordinates>126.896538036905,37.4849270383011,0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
