@@ -338,6 +338,46 @@ const INLINE_GEOJSON = {
       "geometry": {
         "type": "Point",
         "coordinates": [
+          126.991213639812,
+          37.7874220482721
+        ]
+      },
+      "properties": {
+        "name": "삼성약국",
+        "category": "약국",
+        "address": "경기도 양주시 백석읍 양주산성로 568",
+        "phone": "031-894-5775",
+        "date": "2026-11-02",
+        "sido": "경기도",
+        "sigungu": "양주시",
+        "color": "#2ecc71"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.040186107233,
+          37.4918634401248
+        ]
+      },
+      "properties": {
+        "name": "바루다튼튼마취통증의학과의원",
+        "category": "의원",
+        "address": "서울특별시 강남구 도곡로 190, 서원빌딩 1층 일부, 3층, 4층 일부 (도곡동)",
+        "phone": "02-529-7555",
+        "date": "2026-10-30",
+        "sido": "서울특별시",
+        "sigungu": "강남구",
+        "color": "#3498db"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           127.028755869816,
           37.6204657886777
         ]
@@ -758,7 +798,7 @@ const INLINE_GEOJSON = {
 const INLINE_KML = `<?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://www.opengis.net/kml/2.2">
   <Document>
-    <name>서울/경기 신규 허가 의료기관 (2026-11-01)</name>
+    <name>서울/경기 신규 허가 의료기관 (2026-11-02)</name>
     <description>의료기관 신규 허가 정보 (행정안전부 공공데이터)</description>
     <Style id="병원">
       <IconStyle>
@@ -778,6 +818,22 @@ const INLINE_KML = `<?xml version="1.0" encoding="UTF-8"?>
         <Icon><href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href></Icon>
       </IconStyle>
     </Style>
+    <Placemark>
+      <name>삼성약국</name>
+      <description>[약국] 허가일: 2026-11-02 | 주소: 경기도 양주시 백석읍 양주산성로 568 | 전화: 031-894-5775</description>
+      <styleUrl>#약국</styleUrl>
+      <Point>
+        <coordinates>126.991213639812,37.7874220482721,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>바루다튼튼마취통증의학과의원</name>
+      <description>[의원] 허가일: 2026-10-30 | 주소: 서울특별시 강남구 도곡로 190, 서원빌딩 1층 일부, 3층, 4층 일부 (도곡동) | 전화: 02-529-7555</description>
+      <styleUrl>#의원</styleUrl>
+      <Point>
+        <coordinates>127.040186107233,37.4918634401248,0</coordinates>
+      </Point>
+    </Placemark>
     <Placemark>
       <name>모범약국</name>
       <description>[약국] 허가일: 2026-10-30 | 주소: 서울특별시 강북구 도봉로 128 (미아동) | 전화: 02-990-9983</description>
